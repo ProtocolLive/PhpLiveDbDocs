@@ -52,7 +52,10 @@
             <span class="const">5</span>,<br>
             <span class="type">string</span> <span class="var">$Prefix</span>
             <span class="type">=</span>
-            <span class="string">''</span>
+            <span class="string">''</span>,<br>
+            <span class="type">callable</span> $OnRun
+            <span class="type">=</span>
+            <span class="const">null</span>
           </div>
           <span class="object">)</span>;
         </div>
@@ -72,6 +75,9 @@
         </p>
         <p>
           <span class="var">$Prefix</span> - Text to be concated with "_" and table name;
+        </p>
+        <p>
+          <span class="var">$OnRun</span> - A callable function to be executed after a Run;
         </p>
         <p>&nbsp;</p>
 
