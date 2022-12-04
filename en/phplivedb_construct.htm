@@ -37,23 +37,33 @@
           <span class="object">PhpLiveDb</span><span class="type">::</span><span
             class="object">__construct(</span><br>
           <div class="ident">
-            <span class="type">string</span> <span class="var">$Ip</span>,<br>
-            <span class="type">string</span> <span class="var">$User</span>,<br>
-            <span class="type">string</span> <span class="var">$Pwd</span>,<br>
-            <span class="type">string</span> <span class="var">$Db</span>,<br>
-            <span class="type">string</span> <span class="var">$Drive</span>
+            <span class="type">string</span> <a href="#ip" class="var">$Ip</a>,<br>
+            <span class="type">string</span> <a href="#user" class="var">$User</a>,<br>
+            <span class="type">string</span> <a href="#pwd" class="var">$Pwd</a>,<br>
+            <span class="type">string</span> <a href="#db" class="var">$Db</a>,<br>
+
+            <span class="type">string</span>
+            <a href="#drive" class="var">$Drive</a>
             <span class="type">=</span>
             <span class="string">'mysql'</span>,<br>
-            <span class="type">string</span> <span class="var">$Charset</span>
+
+            <span class="type">string</span>
+            <a name="#charset" class="var">$Charset</a>
             <span class="type">=</span>
             <span class="string">'utf8mb4'</span>,<br>
-            <span class="type">int</span> <span class="var">$TimeOut</span>
+
+            <span class="type">int</span>
+            <a href="#timeout" class="var">$TimeOut</a>
             <span class="type">=</span>
             <span class="const">5</span>,<br>
-            <span class="type">string</span> <span class="var">$Prefix</span>
+
+            <span class="type">string</span>
+            <a href="#prefix" class="var">$Prefix</a>
             <span class="type">=</span>
             <span class="string">''</span>,<br>
-            <span class="type">callable</span> $OnRun
+
+            <span class="type">callable</span>
+            <a href="#onrun" class="var">$OnRun</a>
             <span class="type">=</span>
             <span class="const">null</span>
           </div>
@@ -64,20 +74,20 @@
         <div class="title">
           <strong>Parameters</strong>
         </div>
-        <p><span class="var">$Ip</span> - Database address, ip or DNS;</p>
-        <p><span class="var">$User</span> - User to authenticate;</p>
-        <p><span class="var">$Pwd</span> - Password to authenticate;</p>
-        <p><span class="var">$Db</span> - Default database schema;</p>
-        <p><span class="var">$Drive</span> - The database used;</p>
-        <p><span class="var">$Charset</span> - The character set;</p>
+        <p><a name="ip" class="var">$Ip</a> - Database address, ip or DNS;</p>
+        <p><a name="user" class="var">$User</a> - User to authenticate;</p>
+        <p><a name="pwd" class="var">$Pwd</a> - Password to authenticate;</p>
+        <p><a name="db" class="var">$Db</a> - Default database schema;</p>
+        <p><a name="drive" class="var">$Drive</a> - The database used;</p>
+        <p><a name="charset" class="var">$Charset</a> - The character set;</p>
         <p>
-          <span class="var">$TimeOut</span> - Maximun seconds to run a query;
+          <a name="timeout" class="var">$TimeOut</a> - Maximun seconds to run a query;
         </p>
         <p>
-          <span class="var">$Prefix</span> - Text to be concated with "_" and table name;
+          <a name="prefix" class="var">$Prefix</a> - Text to be concated with "_" and table name;
         </p>
         <p>
-          <span class="var">$OnRun</span> - A callable function to be executed after a Run;
+          <a name="onrun" class="var">$OnRun</a> - A callable function to be executed after a Run;
         </p>
         <p>&nbsp;</p>
 
