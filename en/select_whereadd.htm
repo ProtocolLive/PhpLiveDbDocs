@@ -22,7 +22,7 @@
         <p>&nbsp;</p>
         <div class="title">Sintaxe</div><br>
         <div class="code">
-          <span class="comment">//Version 2022.12.16.01</span><br>
+          <span class="comment">//Version 2023.06.09.00</span><br>
           <span class="type">namespace</span>
           <span class="object">ProtocolLive</span>\<span class="object">PhpLiveDb</span>;<br>
           <br>
@@ -30,7 +30,7 @@
           <span class="type">function</span>
           <span class="object">Select</span>::<span class="func">WhereAdd(</span><br>
           <span class="ident">
-            <span class="type">string</span>
+            <span class="type">string</span>|<span class="object">UnitEnum</span>
             <span class="var">$Field</span>,<br>
           </span>
           <span class="ident">
@@ -89,7 +89,7 @@
             <span class="const">false</span>
           </span><br>
           <span class="func">)</span><span class="type">:</span>
-          <span class="object">self</span>;
+          <span class="object">self</span>|<span class="type">array</span>|<span class="type">false</span>;
         </div>
         <p>&nbsp;</p>
         <div class="title">Parameters</div>
