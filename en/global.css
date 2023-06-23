@@ -16,6 +16,13 @@ a:visited {
   color: #369
 }
 
+iframe.import {
+  border: 0;
+  overflow: hidden;
+  width: 17rem;
+  height: 2rem;
+}
+
 .code {
   color: #fff;
   background-color: #282a36;
@@ -67,7 +74,7 @@ a:visited {
   color: #ccc;
   font-size: 14px;
   text-align: center;
-  padding-top:10px
+  padding-top: 10px
 }
 
 .menulink {
