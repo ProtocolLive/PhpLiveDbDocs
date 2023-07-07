@@ -16,7 +16,7 @@
 <body>
   <table style="width:95%;margin-left: auto;margin-right: auto;">
     <tr>
-      <td style="width:100%; background-color: #F2F2F2; padding: 20px;">
+      <td style="width:100%;background-color:#F2F2F2;padding:20px">
         <div class="maintitle">Select::WhereAdd</div>
         <p>Add a field to filter the search</p>
         <p>&nbsp;</p>
@@ -30,7 +30,7 @@
           <br>
 
           <span class="type">function</span>
-          <span class="object">Select</span>::<span class="func">WhereAdd(</span><br>
+          <span class="object">Select</span><span class="type">::</span><span class="func">WhereAdd(</span><br>
           <span class="ident">
             <span class="type">string</span>|<span class="object">UnitEnum</span>
             <span class="var">$Field</span>,<br>
@@ -94,6 +94,7 @@
           <span class="object">self</span>|<span class="type">array</span>|<span class="type">false</span>;
         </div>
         <p>&nbsp;</p>
+
         <div class="title">Parameters</div>
         <p>
           <a name="field" class="var">$Field</a>
@@ -140,6 +141,7 @@
           - Dump the command debug;
         </p>
         <p>&nbsp;</p>
+
         <div class="title">Notes</div>
         <p>
           - When the <a href="#value">$Value</a> is null, the <a href="#type">Type</a> are changed to <span
@@ -153,8 +155,8 @@
           - When using a SQL expression in <a href="#field">$Field</a>, its mandatory to use the <a
             href="#custom">$CustomPlaceholder</a>;
         </p>
-
         <p>&nbsp;</p>
+
         <div class="title">Examples</div><br>
 
         Select with one condition:<br>
