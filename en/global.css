@@ -28,6 +28,7 @@ iframe.import {
   background-color: #282a36;
   border: dotted 1px;
   font-family: Consolas, 'Courier New', monospace;
+  margin-bottom: 20px;
   padding: 10px;
 }
 
