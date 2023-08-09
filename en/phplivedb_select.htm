@@ -64,21 +64,54 @@
         <div class="code">
           <span class="var">$consult</span>
           <span class="type">=</span>
-          $Db<span class="type">-></span><span class="func">Select(</span><span class="string">'users'</span><span class="func">)</span>;
+          $Db<span class="type">-></span><span class="func">Select(</span><span class="string">'users'</span><span class="func">)</span>;<br>
+          <div class="comment">
+            //select * from users
+          </div>
         </div>
 
         Table name with alias
         <div class="code">
           <span class="var">$consult</span>
           <span class="type">=</span>
-          $Db<span class="type">-></span><span class="func">Select(</span><span class="string">'users u'</span><span class="func">)</span>;
+          $Db<span class="type">-></span><span class="func">Select(</span><span class="string">'users u'</span><span class="func">)</span>;<br>
+          <div class="comment">
+            //select * from users u
+          </div>
         </div>
 
         Using enum
         <div class="code">
+          <span class="type">enum</span>
+          <span class="object">Tables</span><span class="type">: string</span>{<br>
+          <div class="ident">
+            <span class="type">case</span>
+            <span class="const">Users</span>
+            <span class="type">=</span>
+            <span class="string">'users'</span>;<br>
+          </div>
+          }<br>
+          <br>
           <span class="var">$consult</span>
           <span class="type">=</span>
-          $Db<span class="type">-></span><span class="func">Select(</span><span class="object">Tables</span><span class="type">::</span><span class="const">Users</span><span class="func">)</span>;
+          $Db<span class="type">-></span><span class="func">Select(</span><span class="object">Tables</span><span class="type">::</span><span class="const">Users</span><span class="func">)</span>;<br>
+          <div class="comment">
+            //select * from users
+          </div>
+        </div>
+
+        Subquery as table
+        <div class="code">
+          <span class="var">$consult</span>
+          <span class="type">=</span>
+          $Db<span class="type">-></span><span class="func">Select(</span><br>
+          <div class="ident string">
+            '(select * from users where user_act=1) as users'
+          </div>
+          )</span>;<br>
+          <div class="comment">
+            //select * from (select * from users where user_act=1) as users
+          </div>
         </div>
 
       </td>
