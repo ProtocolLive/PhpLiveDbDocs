@@ -34,7 +34,7 @@
           <span class="type">public function</span>
           <span class="object">PhpLiveDb</span><span class="type">::</span><span class="func">Select(</span><br>
           <div class="ident">
-            <span class="type">string</span>
+            <span class="type">string</span>|<span class="object">UnitEnum</span>
             <span class="var">$Table</span>
           </div>
           <div class="ident">
@@ -73,7 +73,13 @@
           <span class="type">=</span>
           $Db<span class="type">-></span><span class="func">Select(</span><span class="string">'users u'</span><span class="func">)</span>;
         </div>
-        <p>&nbsp;</p>
+
+        Using enum
+        <div class="code">
+          <span class="var">$consult</span>
+          <span class="type">=</span>
+          $Db<span class="type">-></span><span class="func">Select(</span><span class="object">Tables</span><span class="type">::</span><span class="const">Users</span><span class="func">)</span>;
+        </div>
 
       </td>
       <td style="color:#ccc;font-size:18px;vertical-align:top">
