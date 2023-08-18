@@ -24,13 +24,11 @@
         <p>&nbsp;</p>
         <div class="title">Sintaxe</div><br>
         <div class="code">
-          <span class="comment">//Version 2023.08.17.01</span><br>
+          <span class="comment">//Version 2022.08.26.00</span><br>
           <br>
 
           <span class="type">namespace</span>
           <span class="object">ProtocolLive</span>\<span class="object">PhpLiveDb</span>;<br>
-          <span class="type">use</span>
-          <span class="object">PDO</span>;<br>
           <br>
 
           <span class="type">enum</span>
@@ -39,27 +37,17 @@
             <span class="type">case</span>
             <span class="const">Bool</span>
             <span class="type">=</span>
-            <span class="object">PDO</span><span class="type">::</span><span class="const">PARAM_BOOL</span>;<br>
-
-            <span class="type">case</span>
-            <span class="const">Date</span>
-            <span class="type">=</span>
-            <span class="object">PDO</span><span class="type">::</span><span class="const">PARAM_STR</span>;<br>
-
-            <span class="type">case</span>
-            <span class="const">Float</span>
-            <span class="type">=</span>
-            <span class="object">PDO</span><span class="type">::</span><span class="const">PARAM_STR</span>;<br>
+            <span class="const">5</span>;<br>
 
             <span class="type">case</span>
             <span class="const">Int</span>
             <span class="type">=</span>
-            <span class="object">PDO</span><span class="type">::</span><span class="const">PARAM_INT</span>;<br>
+            <span class="const">1</span>;<br>
 
             <span class="type">case</span>
             <span class="const">Null</span>
             <span class="type">=</span>
-            <span class="object">PDO</span><span class="type">::</span><span class="const">PARAM_NULL</span>;<br>
+            <span class="const">0</span>;<br>
 
             <span class="type">case</span>
             <span class="const">Sql</span>
@@ -69,7 +57,7 @@
             <span class="type">case</span>
             <span class="const">Str</span>
             <span class="type">=</span>
-            <span class="object">PDO</span><span class="type">::</span><span class="const">PARAM_STR</span>;<br>
+            <span class="const">2</span>;
           </div>
           }
         </div>
@@ -80,16 +68,8 @@
           - Replace <b>true</b> to 1 and <b>false</b> to 0;
         </p>
         <p>
-          <span class="var">Date</span>
-          - For use with dates in internacional format (yyyy-mm-dd hh:mm:ss);
-        </p>
-        <p>
-          <span class="var">Float</span>
-          - For float or decimal values;
-        </p>
-        <p>
           <span class="var">Int</span>
-          - For integer values;
+          - For int values;
         </p>
         <p>
           <span class="var">Null</span>
@@ -101,7 +81,7 @@
         </p>
         <p>
           <span class="var">Str</span>
-          - For use string;
+          - For use string, dates and floats;
         </p>
         <p>&nbsp;</p>
 
