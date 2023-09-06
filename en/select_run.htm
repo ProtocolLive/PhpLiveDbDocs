@@ -32,54 +32,47 @@
 
           <span class="type">function</span>
           <span class="object">Select</span><span class="type">::</span><span class="func">Run(</span><br>
-          <span class="ident">
+          <div class="ident">
             <span class="type">bool</span>
             <a href="#FetchBoth" class="var">$FetchBoth</a>
             <span class="type">=</span>
-            <span class="const">false</span>,
-          </span><br>
-          <span class="ident">
+            <span class="const">false</span>,<br>
+
             <span class="type">bool</span>
             <a href="#Debug" class="var">$Debug</a>
             <span class="type">=</span>
-            <span class="const">false</span>,
-          </span><br>
-          <span class="ident">
+            <span class="const">false</span>,<br>
+
             <span class="type">bool</span>
             <a href="#HtmlSafe" class="var">$HtmlSafe</a>
             <span class="type">=</span>
-            <span class="const">true</span>,
-          </span><br>
-          <span class="ident">
+            <span class="const">true</span>,<br>
+
             <span class="type">bool</span>
             <a href="#TrimValues" class="var">$TrimValues</a>
             <span class="type">=</span>
-            <span class="const">true</span>,
-          </span><br>
-          <span class="ident">
+            <span class="const">true</span>,<br>
+
             <span class="type">bool</span>
             <a href="#Log" class="var">$Log</a>
             <span class="type">=</span>
-            <span class="const">false</span>,
-          </span><br>
-          <span class="ident">
+            <span class="const">false</span>,<br>
+
             <span class="type">int</span>|<span class="object">BackedEnum</span>
             <a href="#LogEvent" class="var">$LogEvent</a>
             <span class="type">=</span>
-            <span class="const">null</span>,
-          </span><br>
-          <span class="ident">
+            <span class="const">null</span>,<br>
+
             <span class="type">int</span>
             <a href="#LogUser" class="var">$LogUser</a>
             <span class="type">=</span>
-            <span class="const">null</span>,
-          </span><br>
-          <span class="ident">
+            <span class="const">null</span>,<br>
+
             <span class="type">bool</span>
             <a href="#Fetch" class="var">$Fetch</a>
             <span class="type">=</span>
             <span class="const">false</span>
-          </span><br>
+          </div>
           <span class="func">)</span></span><span class="type">:array</span>|<span class="type">bool</span>;
         </div>
         <p>&nbsp;</p>
@@ -124,22 +117,21 @@
         <div class="code">
           <span class="var">$consult</span> <span class="type">=</span>
           $Db<span class="type">-></span><span class="func">Select(</span><span class="string">'users'</span><span class="func">)</span><br>
-          <span class="type">-></span><span class="func">Run(</span><br>
-          <span class="ident">
-            <span class="argument">FetchBoth:</span>
-            <span class="const">true</span>
-          </span><br>
-          <span class="func">)</span>;<br>
+          <span class="type">-></span><span class="func">Run(</span><span class="argument">FetchBoth:</span>
+            <span class="const">true</span><span class="func">)</span>;<br>
           <span class="comment">/*</span><br>
-          <span class="ident comment">[</span><br>
-          <span class="ident"><span class="ident comment">0 => "1",</span></span><br>
-          <span class="ident"><span class="ident comment">"user_id" => '1',</span></span><br>
-          <span class="ident"><span class="ident comment">1 => "admin",</span></span><br>
-          <span class="ident"><span class="ident comment">"user" => "admin",</span></span><br>
-          <span class="ident"><span class="ident comment">2 => "12345678",</span></span><br>
-          <span class="ident"><span class="ident comment">"pwd" => "12345678"</span></span>
-          </span><br>
-          <span class="ident comment">]</span><br>
+          <div class="ident comment">
+            [</span><br>
+            <div class="ident">
+              0 => "1",<br>
+              "user_id" => '1',<br>
+              1 => "admin",<br>
+              "user" => "admin",<br>
+              2 => "12345678",<br>
+              "pwd" => "12345678"
+            </div>
+            ]
+          </div>
           <span class="comment">*/</span>
         </div>
         <br>
@@ -148,18 +140,16 @@
           <span class="var">$consult</span> <span class="type">=</span>
           $Db<span class="type">-></span><span class="func">Select(</span><span class="string">'users'</span><span class="func">)</span><br>
           <span class="type">-></span><span class="func">Run(</span><br>
-          <span class="ident">
+          <div class="ident">
             <span class="argument">Log:</span>
-            <span class="const">true</span>,
-          </span><br>
-          <span class="ident">
+            <span class="const">true</span>,<br>
+
             <span class="argument">LogUser:</span>
-            <span class="var">$_SESSION</span><span class="type">[</span><span class="string">'user_id'</span><span class="type">]</span>,
-          </span><br>
-          <span class="ident">
+            <span class="var">$_SESSION</span><span class="type">[</span><span class="string">'user_id'</span><span class="type">]</span>,<br>
+
             <span class="argument">LogEvent:</span>
             <span class="object">SqlLogs</span>::<span class="const">UserSelect</span>
-          </span><br>
+          </div>
           <span class="func">)</span>;
         </div>
         <p>&nbsp;</p>
