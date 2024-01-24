@@ -19,7 +19,7 @@
       <td style="width:100%; background-color: #F2F2F2; padding: 20px;">
         <div class="maintitle">Select::Fields</div>
         <p>Specify the table fields to return</p>
-        <p>&nbsp;</p>
+
         <div class="title">Sintaxe</div><br>
         <div class="code">
           <iframe src="version_select.htm" class="import"></iframe>
@@ -37,14 +37,12 @@
           </div>
           <span class="func">)</span><span class="type">:</span><span class="object">self</span>;
         </div>
-        <p>&nbsp;</p>
 
         <div class="title">Parameters</div>
         <p>
           <a name="field" class="var">$Field</a>
-          - The fields names, separated by a comma. Can be used alias and subquerys;
+          - The fields names, separated by a comma. Can be used alias and sub-queries;
         </p>
-        <p>&nbsp;</p>
 
         <div class="title">Examples</div><br>
         <div class="code">
@@ -74,7 +72,7 @@
           </div>
           <span class="string">'</span></span><span class="func">)</span>;<br>
           $consult<span class="type">-></span><span class="func">Run()</span>;<br>
-          <span class="comment">//select user_id,(select value from socialmedias where name='Telegram' and user_id=u.user_id<br>) as telegram from users u</span><br>
+          <span class="comment">//select user_id,(select value from socialmedias where name='Telegram' and user_id=u.user_id) as telegram from users u</span><br>
         </div><br>
 
         <div class="code">
@@ -100,9 +98,7 @@
           <span class="var">$consult</span><span class="type">-></span><span class="func">Fields(</span><span class="object">UserFields</span>::<span class="const">Email</span><span class="func">)</span>;<br>
           $consult<span class="type">-></span><span class="func">Run()</span>;<br>
           <span class="comment">//select email from users</span><br>
-        </div><br>
-
-        <p>&nbsp;</p>
+        </div>
       </td>
       <td style="color:#ccc;font-size:18px;vertical-align:top">
         <iframe src="menu.htm" class="menu2"></iframe>
