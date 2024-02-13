@@ -32,7 +32,7 @@
           <span class="type">function</span>
           <span class="object">Select</span><span class="type">::</span><span class="func">WhereAdd(</span><br>
           <div class="ident">
-            <span class="type">string</span>|<span class="object">UnitEnum</span>
+            <span class="type">string</span>|<span class="type">string[]</span>|<span class="object">UnitEnum</span>|<span class="object">UnitEnum</span><span class="type">[]</span>
             <span class="var">$Field</span>,<br>
 
             <span class="type">string</span>
@@ -91,7 +91,7 @@
         <div class="title">Parameters</div>
         <p>
           <a name="field" class="var">$Field</a>
-          - Field name. Can be null to only add <a href="parenthesis.htm" class="object">Parenthesis</a> or add <a href="operators.htm" class="object">Exists</a> operator;
+          - Field name. Can be null to only add <a href="parenthesis.htm" class="object">Parenthesis</a>;
         </p>
         <p>
           <a name="value" class="var">$Value</a>
@@ -164,7 +164,7 @@
           $consult<span class="type">-></span><span class="func">Run()</span>;<br>
           <span class="comment">//select * from users where email=:email</span><br>
           <span class="comment">//select * from users where email='foo@bar.com'</span><br>
-        </div><br>
+        </div>
 
         Select with more conditions:<br>
         <div class="code">
@@ -187,7 +187,7 @@
           $consult<span class="type">-></span><span class="func">Run()</span>;<br>
           <span class="comment">//select * from users where email=:email and active=:active</span><br>
           <span class="comment">//select * from users where email='foo@bar.com' and active=1</span><br>
-        </div><br>
+        </div>
 
         Select with "Or" and "CustomPlaceholder":<br>
         <div class="code">
@@ -272,6 +272,27 @@
           $consult<span class="type">-></span><span class="func">Run()</span>;<br>
           <span class="comment">//select * from users where active=:active and (name like :name or email like :name)</span><br>
           <span class="comment">//select * from users where active=1 and (name like '%foo%' or email like '%foo%')</span>
+        </div>
+
+        Select with like operator in many fields:<br>
+        <div class="code">
+          <span class="var">$consult</span>
+          = <span class="var">$Db</span><span class="type">-></span><span class="func">Select(</span><span class="string">'users'</span><span class="func">)</span><br>
+          <span class="type">-></span><span class="func">WhereAdd(</span><br>
+          <div class="ident">
+            <span class="type">[</span><span class="string">'email'</span>,
+            <span class="string">'name'</span><span class="type">,</span>
+            <span class="string">'street'</span><span class="type">]</span>,<br>
+            $_POST<span class="type">[</span><span class="string">'value'</span><span class="type">]</span>,<br>
+            <span class="object">Types</span><span class="type">::</span><span class="const">Str</span>,<br>
+            <span class="object">Operators</span><span class="type">::</span><span class="const">Like</span>,<br>
+            <span class="object">AndOr</span><span class="type">::</span><span class="const">Or</span>,<br>
+            <span class="argument">CustomPlaceholder:</span> <span class="string">'value'</span>
+          </div>
+          <span class="func">)</span><br>
+          <span class="type">-></span><span class="func">Run()</span>;<br>
+          <span class="comment">//select * from users where email like :value or name like :value or street like :value</span><br>
+          <span class="comment">//select * from users where email like '%bob%' or name like '%bob%' or street like '%bob%'</span><br>
         </div>
       </td>
       <td style="color:#ccc;font-size:18px;vertical-align:top">
