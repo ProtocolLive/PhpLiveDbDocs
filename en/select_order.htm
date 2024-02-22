@@ -18,7 +18,7 @@
     <tr>
       <td style="width:100%; background-color: #F2F2F2; padding: 20px;">
         <div class="maintitle">Select::Order</div>
-        <p>Specify the order of the result</p>
+        <p>Specify the order of the result. Uses the default ordering specified by the server if not explicit.</p>
 
         <div class="title">Sintaxe</div><br>
         <div class="code">
@@ -52,7 +52,7 @@
           <span class="var">$consult</span><span class="type">-></span><span class="func">Order(</span><span class="string">'email'</span><span class="func">)</span>;<br>
           $consult<span class="type">-></span><span class="func">Run()</span>;<br>
           <span class="comment">//select * from users order by email</span><br>
-        </div><br>
+        </div>
 
         <div class="code">
           <span class="var">$consult</span>
@@ -61,7 +61,17 @@
           <span class="var">$consult</span><span class="type">-></span><span class="func">Order(</span><span class="string">'cad_date desc'</span><span class="func">)</span>;<br>
           $consult<span class="type">-></span><span class="func">Run()</span>;<br>
           <span class="comment">//select * from users order by cad_date desc</span><br>
-        </div><br>
+        </div>
+
+        <div class="code">
+          <span class="var">$consult</span>
+          <span class="type">=</span>
+          <span class="var">$Db</span><span class="type">-></span><span class="func">Select(</span><span class="string">'users'</span><span class="func">)</span>;<br>
+          <span class="var">$consult</span><span class="type">-></span><span class="func">Order(</span><span class="object">UsersFields</span><span class="type">::</span><span class="const">CadDate</span><span class="type">-></span>value
+          . <span class="string">' desc'</span><span class="func">)</span>;<br>
+          $consult<span class="type">-></span><span class="func">Run()</span>;<br>
+          <span class="comment">//select * from users order by cad_date desc</span><br>
+        </div>
 
       </td>
       <td style="color:#ccc;font-size:18px;vertical-align:top">
