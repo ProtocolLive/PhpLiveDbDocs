@@ -61,7 +61,7 @@
         </p>
         <p>
           <a name="field" class="var">$Return</a>
-          - Return type. The table's fields in string or array format, or the query for performance purposes;
+          - Return type;
         </p>
         <p>
           <a name="field" class="var">$Alias</a>
@@ -72,6 +72,9 @@
         <p>
           - <a href="select_fieldsget.htm">FieldsGet</a>
         </p>
+        <p>
+          - <a href="fieldsgetreturn.htm">FieldsGetReturn</a>
+        </p>
 
         <div class="title">Examples</div><br>
         <div class="code">
@@ -81,7 +84,9 @@
           <span class="object">echo</span>
           <span class="var">$consult</span><span class="type">-></span><span class="func">FieldsGet()</span>;<br>
           <span class="comment">//user_id,user,email,pwd,created,lastlogin</span><br>
-          <br>
+        </div>
+
+        <div class="code">
           <span class="var">$consult</span>
           <span class="type">=</span>
           <span class="var">$Db</span><span class="type">-></span><span class="func">Select(</span><span class="string">'users'</span><span class="func">)</span>;<br>
