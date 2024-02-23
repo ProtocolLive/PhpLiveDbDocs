@@ -113,8 +113,8 @@
         <br>
         <div class="code">
           <span class="var">$consult</span> <span class="type">=</span>
-          $Db<span class="type">-></span><span class="func">Select(</span><span class="string">'users'</span><span class="func">)</span><br>
-          <span class="type">-></span><span class="func">Run(</span><span class="argument">FetchBoth:</span>
+          $Db<span class="type">-></span><a href="phplivedb_select.htm" class="func">Select</a><span class="func">(</span><span class="string">'users'</span><span class="func">)</span><br>
+          <span class="type">-></span><a href="select_run.htm" class="func">Run</a><span class="func">(</span><a href="#FetchBoth" class="argument">FetchBoth:</a>
             <span class="const">true</span><span class="func">)</span>;<br>
           <span class="comment">/*</span><br>
           <div class="ident comment">
@@ -135,16 +135,16 @@
 
         <div class="code">
           <span class="var">$consult</span> <span class="type">=</span>
-          $Db<span class="type">-></span><span class="func">Select(</span><span class="string">'users'</span><span class="func">)</span><br>
-          <span class="type">-></span><span class="func">Run(</span><br>
+          $Db<span class="type">-></span><a href="phplivedb_select.htm" class="func">Select</a><span class="func">(</span><span class="string">'users'</span><span class="func">)</span><br>
+          <span class="type">-></span><a href="select_run.htm" class="func">Run</a><span class="func">(</span><br>
           <div class="ident">
-            <span class="argument">Log:</span>
+            <a href="#Log" class="argument">Log:</a>
             <span class="const">true</span>,<br>
 
-            <span class="argument">LogUser:</span>
+            <a href="#LogUser" class="argument">LogUser:</a>
             <span class="var">$_SESSION</span><span class="type">[</span><span class="string">'user_id'</span><span class="type">]</span>,<br>
 
-            <span class="argument">LogEvent:</span>
+            <a href="#LogEvent" class="argument">LogEvent:</a>
             <span class="object">SqlLogs</span>::<span class="const">UserSelect</span>
           </div>
           <span class="func">)</span>;

@@ -30,20 +30,20 @@
           <br>
 
           <span class="type">function</span>
-          <span class="object">Select</span><span class="type">::</span><span class="func">FieldsGetExcept(</span><br>
+          <a href="phplivedb_select.htm" class="object">Select</a><span class="type">::</span><span class="func">FieldsGetExcept(</span><br>
           <div class="ident">
             <span class="type">string</span>|<span class="object">UnitEnum</span>
-            $Field<br>
+            <a href="#Field" class="var">$Field</a><br>
             <span class="type">string</span>|<span class="object">UnitEnum</span>
-            $Table
+            <a href="#Table" class="var">$Table</a>
             <span class="type">=</span>
             <span class="const">null</span>,<br>
             <span class="object">FieldsGetReturn</span>
-            $Return
+            <a href="#Return" class="var">$Return</a>
             <span class="type">=</span>
             <span class="object">FieldsGetReturn</span><span class="type">::</span><span class="const">String</span>,<br>
             <span class="type">string</span>
-            $Alias
+            <a href="#Alias" class="var">$Alias</a>
             <span class="type">=</span>
             <span class="const">null</span><br>
           </div>
@@ -52,19 +52,19 @@
 
         <div class="title">Parameters</div>
         <p>
-          <a name="field" class="var">$Field</a>
+          <a name="Field" class="var">$Field</a>
           - Field name to exclude from list;
         </p>
         <p>
-          <a name="field" class="var">$Table</a>
+          <a name="Table" class="var">$Table</a>
           - Use a different table then select in <a href="phplivedb_select">Select</a>;
         </p>
         <p>
-          <a name="field" class="var">$Return</a>
+          <a name="Return" class="var">$Return</a>
           - Return type;
         </p>
         <p>
-          <a name="field" class="var">$Alias</a>
+          <a name="Alias" class="var">$Alias</a>
           - Concatenate the alias with every field name;
         </p>
 
@@ -76,7 +76,7 @@
         <div class="code">
           <span class="var">$consult</span>
           <span class="type">=</span>
-          <span class="var">$Db</span><span class="type">-></span><span class="func">Select(</span><span class="string">'users'</span><span class="func">)</span>;<br>
+          <span class="var">$Db</span><span class="type">-></span><a href="phplivedb_select.htm" class="func">Select</a><span class="func">(</span><span class="string">'users'</span><span class="func">)</span>;<br>
           <span class="object">echo</span>
           <span class="var">$consult</span><span class="type">-></span><span class="func">FieldsGet()</span>;<br>
           <span class="comment">//user_id,user,email,pwd,created,lastlogin</span><br>
@@ -85,7 +85,7 @@
         <div class="code">
           <span class="var">$consult</span>
           <span class="type">=</span>
-          <span class="var">$Db</span><span class="type">-></span><span class="func">Select(</span><span class="string">'users'</span><span class="func">)</span>;<br>
+          <span class="var">$Db</span><span class="type">-></span><a href="phplivedb_select.htm" class="func">Select</a><span class="func">(</span><span class="string">'users'</span><span class="func">)</span>;<br>
           <span class="object">echo</span>
           <span class="var">$consult</span><span class="type">-></span><span class="func">FieldsGetExcept(<span class="string">'email'</span>)</span>;<br>
           <span class="comment">//user_id,user,pwd,created,lastlogin</span><br>

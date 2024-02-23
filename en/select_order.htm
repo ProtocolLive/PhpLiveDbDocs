@@ -30,17 +30,17 @@
           <br>
 
           <span class="type">function</span>
-          <span class="object">Select</span><span class="type">::</span><span class="func">Order(</span><br>
+          <a href="phplivedb_select.htm" class="object">Select</a><span class="type">::</span><span class="func">Order(</span><br>
           <div class="ident">
             <span class="type">string</span>|<span class="object">UnitEnum</span>|<span class="type">null</span>
-            <span class="var">$Fields</span><br>
+            <a href="#Fields" class="var">$Fields</a><br>
           </div>
           <span class="func">)</span><span class="type">:</span><span class="object">self</span>;
         </div>
 
         <div class="title">Parameters</div>
         <p>
-          <a name="field" class="var">$Field</a>
+          <a name="Fields" class="var">$Field</a>
           - The fields names, separated by a comma. Can be used the keywords "asc" and "desc";
         </p>
 
@@ -48,28 +48,28 @@
         <div class="code">
           <span class="var">$consult</span>
           <span class="type">=</span>
-          <span class="var">$Db</span><span class="type">-></span><span class="func">Select(</span><span class="string">'users'</span><span class="func">)</span>;<br>
+          <span class="var">$Db</span><span class="type">-></span><a href="phplivedb_select.htm" class="func">Select</a><span class="func">(</span><span class="string">'users'</span><span class="func">)</span>;<br>
           <span class="var">$consult</span><span class="type">-></span><span class="func">Order(</span><span class="string">'email'</span><span class="func">)</span>;<br>
-          $consult<span class="type">-></span><span class="func">Run()</span>;<br>
+          $consult<span class="type">-></span><a href="select_run.htm" class="func">Run</a><span class="func">()</span>;<br>
           <span class="comment">//select * from users order by email</span><br>
         </div>
 
         <div class="code">
           <span class="var">$consult</span>
           <span class="type">=</span>
-          <span class="var">$Db</span><span class="type">-></span><span class="func">Select(</span><span class="string">'users'</span><span class="func">)</span>;<br>
+          <span class="var">$Db</span><span class="type">-></span><a href="phplivedb_select.htm" class="func">Select</a><span class="func">(</span><span class="string">'users'</span><span class="func">)</span>;<br>
           <span class="var">$consult</span><span class="type">-></span><span class="func">Order(</span><span class="string">'cad_date desc'</span><span class="func">)</span>;<br>
-          $consult<span class="type">-></span><span class="func">Run()</span>;<br>
+          $consult<span class="type">-></span><a href="select_run.htm" class="func">Run()</a>;<br>
           <span class="comment">//select * from users order by cad_date desc</span><br>
         </div>
 
         <div class="code">
           <span class="var">$consult</span>
           <span class="type">=</span>
-          <span class="var">$Db</span><span class="type">-></span><span class="func">Select(</span><span class="string">'users'</span><span class="func">)</span>;<br>
+          <span class="var">$Db</span><span class="type">-></span><a href="phplivedb_select.htm" class="func">Select</a><span class="func">(</span><span class="string">'users'</span><span class="func">)</span>;<br>
           <span class="var">$consult</span><span class="type">-></span><span class="func">Order(</span><span class="object">UsersFields</span><span class="type">::</span><span class="const">CadDate</span><span class="type">-></span>value
           . <span class="string">' desc'</span><span class="func">)</span>;<br>
-          $consult<span class="type">-></span><span class="func">Run()</span>;<br>
+          $consult<span class="type">-></span><a href="select_run.htm" class="func">Run</a><span class="func">()</span>;<br>
           <span class="comment">//select * from users order by cad_date desc</span><br>
         </div>
 

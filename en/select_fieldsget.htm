@@ -33,15 +33,15 @@
           <span class="object">Select</span><span class="type">::</span><span class="func">FieldsGet(</span><br>
           <div class="ident">
             <span class="type">string</span>|<span class="object">UnitEnum</span>
-            $Table
+            <a href="#Table" class="var">$Table</a>
             <span class="type">=</span>
             <span class="const">null</span>,<br>
             <span class="object">FieldsGetReturn</span>
-            $Return
+            <a href="#Return" class="var">$Return</a>
             <span class="type">=</span>
             <span class="object">FieldsGetReturn</span><span class="type">::</span><span class="const">String</span>,<br>
             <span class="type">string</span>
-            $Alias
+            <a href="#Alias" class="var">$Alias</a>
             <span class="type">=</span>
             <span class="const">null</span><br>
           </div>
@@ -50,15 +50,15 @@
 
         <div class="title">Parameters</div>
         <p>
-          <a name="field" class="var">$Table</a>
+          <a name="Table" class="var">$Table</a>
           - Use a different table than the one specified in <a href="phplivedb_select">Select</a>;
         </p>
         <p>
-          <a name="field" class="var">$Return</a>
+          <a name="Return" class="var">$Return</a>
           - Return type. See <a href="fieldsgetreturn.htm">FieldsGetReturn</a> for more details;
         </p>
         <p>
-          <a name="field" class="var">$Alias</a>
+          <a name="Alias" class="var">$Alias</a>
           - Concatenates the alias with all field names;
         </p>
 
@@ -70,7 +70,7 @@
         <div class="code">
           <span class="var">$consult</span>
           <span class="type">=</span>
-          <span class="var">$Db</span><span class="type">-></span><span class="func">Select(</span><span class="string">'users'</span><span class="func">)</span>;<br>
+          <span class="var">$Db</span><span class="type">-></span><a href="phplivedb_select.htm" class="func">Select</a><span class="func">(</span><span class="string">'users'</span><span class="func">)</span>;<br>
           <span class="object">echo</span>
           <span class="var">$consult</span><span class="type">-></span><span class="func">FieldsGet()</span>;<br>
           <span class="comment">//user_id,user,email,pwd,created,lastlogin</span><br>
@@ -79,9 +79,9 @@
         <div class="code">
           <span class="var">$consult</span>
           <span class="type">=</span>
-          <span class="var">$Db</span><span class="type">-></span><span class="func">Select(</span><span class="string">'users'</span><span class="func">)</span>;<br>
-          <span class="object">var_dump(</span><span class="var">$consult</span><span class="type">-></span><span class="func">FieldsGet(</span><span class="argument">Return:</span>
-          <span class="object">FieldsGetReturn</span><span class="type">::</span><span class="const">Array</span><span class="func">)</span><span class="object">)</span>;<br>
+          <span class="var">$Db</span><span class="type">-></span><a href="phplivedb_select.htm" class="func">Select</a><span class="func">(</span><span class="string">'users'</span><span class="func">)</span>;<br>
+          <span class="object">var_dump(</span><span class="var">$consult</span><span class="type">-></span><span class="func">FieldsGet(</span><a href="#Return" class="argument">Return:</a>
+          <a href="enum_fieldsgetreturn.htm" class="object">FieldsGetReturn</a><span class="type">::</span><span class="const">Array</span><span class="func">)</span><span class="object">)</span>;<br>
           <div class="comment">
             /*<br>
             array(6) {

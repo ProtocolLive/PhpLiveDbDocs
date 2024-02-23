@@ -30,23 +30,23 @@
           <br>
 
           <span class="type">function</span>
-          <span class="object">Select</span><span class="type">::</span><span class="func">FieldsExcept(</span><br>
+          <a href="phplivedb_select.htm" class="object">Select</a><span class="type">::</span><span class="func">FieldsExcept(</span><br>
           <div class="ident">
             <span class="type">string</span>|<span class="object">UnitEnum</span>
-            <span class="var">$Field</span>,<br>
+            <a href="#Field" class="var">$Field</a>,<br>
             <span class="type">string</span>
-            <span class="var">$Alias</span><br>
+            <a href="#Alias" class="var">$Alias</a><br>
           </div>
           <span class="func">)</span><span class="type">:</span><span class="object">self</span>;
         </div>
 
         <div class="title">Parameters</div>
         <p>
-          <a name="field" class="var">$Field</a>
+          <a name="Field" class="var">$Field</a>
           - The field names;
         </p>
         <p>
-          <a name="alias" class="var">$Alias</a>
+          <a name="Alias" class="var">$Alias</a>
           - Table alias without dot;
         </p>
 
@@ -58,9 +58,9 @@
         <div class="code">
           <span class="var">$consult</span>
           <span class="type">=</span>
-          <span class="var">$Db</span><span class="type">-></span><span class="func">Select(</span><span class="string">'users'</span><span class="func">)</span><br>
+          <span class="var">$Db</span><span class="type">-></span><a href="phplivedb_select.htm" class="func">Select</a><span class="func">(</span><span class="string">'users'</span><span class="func">)</span><br>
           <span class="type">-></span></span><span class="func">FieldsExcept(</span><span class="string">'email'</span><span class="func">)</span><br>
-          <span class="type">-></span></span><span class="func">Run()</span>;
+          <span class="type">-></span></span><a href="select_run.htm" class="func">Run</a><span class="func">()</span>;
           <div class="comment">
             //Table fields: user_id,name,email,active,lastlogin<br>
             //select user_id,name,active,lastlogin from users

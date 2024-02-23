@@ -35,32 +35,32 @@
           <span class="object">Select</span><span class="type">::</span><span class="func">JoinAdd(</span><br>
           <div class="ident">
             <span class="type">string</span>|<span class="object">UnitEnum</span>
-            <span class="var">$Table</span>,<br>
+            <a href="#Table" class="var">$Table</a>,<br>
             <span class="type">string</span>|<span class="type">null</span>|<span class="object">UnitEnum</span>
-            <span class="var">$Using</span> <span class="type">=</span> <span class="const">null</span>,<br>
+            <a href="#Using" class="var">$Using</a> <span class="type">=</span> <span class="const">null</span>,<br>
             <span class="type">string</span>|<span class="type">null</span>
-            <span class="var">$On</span> <span class="type">=</span> <span class="const">null</span>,<br>
+            <a href="#On" class="var">$On</a> <span class="type">=</span> <span class="const">null</span>,<br>
             <span class="object">Joins</span>
-            <span class="var">$Type</span> <span class="type">=</span> <span class="object">Joins</span><span class="type">::</span><span class="const">Left</span>
+            <a href="#Type" class="var">$Type</a> <span class="type">=</span> <span class="object">Joins</span><span class="type">::</span><span class="const">Left</span>
           </div>
           <span class="func">)</span><span class="type">:</span><span class="object">self</span>;
         </div>
 
         <div class="title">Parameters</div>
         <p>
-          <a name="field" class="var">$Table</a>
+          <a name="Table" class="var">$Table</a>
           - The table name. Can be specify an alias;
         </p>
         <p>
-          <a name="field" class="var">$Using</a>
+          <a name="Using" class="var">$Using</a>
           - The SQL "using" relationship field;
         </p>
         <p>
-          <a name="field" class="var">$On</a>
+          <a name="On" class="var">$On</a>
           - The SQL "on" relationship field;
         </p>
         <p>
-          <a name="field" class="var">$Type</a>
+          <a name="Type" class="var">$Type</a>
           - The relationship type;
         </p>
 
@@ -71,33 +71,33 @@
 
         <div class="code">
           <span class="var">$consult</span>
-          = <span class="var">$Db</span><span class="type">-></span><span class="func">Select(</span><span class="string">'users'</span><span class="func">)</span>;<br>
+          = <span class="var">$Db</span><span class="type">-></span><a href="phplivedb_select.htm" class="func">Select</a><span class="func">(</span><span class="string">'users'</span><span class="func">)</span>;<br>
           <span class="var">$consult</span><span class="type">-></span><span class="func">JoinAdd(</span><span class="string">'socialmedias'</span>,
           <span class="string">'user_id'</span><span class="func">)</span>;<br>
-          $consult<span class="type">-></span><span class="func">Run()</span>;<br>
+          $consult<span class="type">-></span><a href="select_run.htm" class="func">Run</a><span class="func">()</span>;<br>
           <span class="comment">//select * from users left join socialmedias using('user_id')</span><br>
         </div><br>
 
         <div class="code">
           <span class="var">$consult</span>
-          = <span class="var">$Db</span><span class="type">-></span><span class="func">Select(</span><span class="string">'users'</span><span class="func">)</span>;<br>
+          = <span class="var">$Db</span><span class="type">-></span><a href="phplivedb_select.htm" class="func">Select</a><span class="func">(</span><span class="string">'users'</span><span class="func">)</span>;<br>
           <span class="var">$consult</span><span class="type">-></span><span class="func">JoinAdd(</span><span class="string">'socialmedias'</span>,
-          <span class="argument">On:</span>
+          <a href="#On" class="argument">On:</a>
           <span class="string">'users.id=socialmedias.user_id'</span><span class="func">)</span>;<br>
-          $consult<span class="type">-></span><span class="func">Run()</span>;<br>
+          $consult<span class="type">-></span><a href="select_run.htm" class="func">Run</a><span class="func">()</span>;<br>
           <span class="comment">//select * from users left join socialmedias on users.id=socialmedias.user_id</span><br>
         </div><br>
 
         <div class="code">
           <span class="var">$consult</span>
-          = <span class="var">$Db</span><span class="type">-></span><span class="func">Select(</span><span class="string">'users'</span><span class="func">)</span>;<br>
+          = <span class="var">$Db</span><span class="type">-></span><a href="phplivedb_select.htm" class="func">Select</a><span class="func">(</span><span class="string">'users'</span><span class="func">)</span>;<br>
 
           <span class="var">$consult</span><span class="type">-></span><span class="func">JoinAdd(</span><span class="string">'socialmedias'</span>,
           <span class="string">'user_id'</span>,
           
-          <span class="argument">Type:</span>
-          <span class="object">Joins</span><span class="type">::</span><span class="const">Inner</span><span class="func">)</span>;<br>
-          $consult<span class="type">-></span><span class="func">Run()</span>;<br>
+          <a href="#Type" class="argument">Type:</a>
+          <a href="enum_joins.htm" class="object">Joins</a><span class="type">::</span><span class="const">Inner</span><span class="func">)</span>;<br>
+          $consult<span class="type">-></span><a href="select_run.htm" class="func">Run</a><span class="func">()</span>;<br>
           <span class="comment">//select * from users inner join socialmedias using('user_id')</span><br>
         </div>
       </td>
