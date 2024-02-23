@@ -3,17 +3,14 @@ html {
   font-family: 'Fira Sans', 'Source Sans Pro', Helvetica, Arial, sans-serif;
 }
 
-a {
+a,
+a:visited {
   color: #369;
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
-}
-
-a:visited {
-  color: #369
 }
 
 iframe.import {
@@ -120,5 +117,5 @@ iframe.import {
 }
 
 .argument {
-  color: #ffb86c
+  color: #ffb86c !important
 }
