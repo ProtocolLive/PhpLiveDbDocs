@@ -30,67 +30,67 @@
           <span class="type">use</span>
           <span class="object">ProtocolLive</span>\<span class="object">PhpLiveDb</span>\<span class="object">Enums</span>\{<br>
           <div class="ident">
-            <span class="object">AndOr</span>,<br>
-            <span class="object">Operators</span>,<br>
-            <span class="object">Parenthesis</span>,<br>
-            <span class="object">Types</span><br>
+            <a href="enum_andor.htm" class="object">AndOr</a>,<br>
+            <a href="enum_operators.htm" class="object">Operators</a>,<br>
+            <a href="enum_parenthesis.htm" class="object">Parenthesis</a>,<br>
+            <a href="enum_types.htm" class="object">Types</a><br>
           </div>
           };<br>
           <br>
 
           <span class="type">function</span>
-          <span class="object">Select</span><span class="type">::</span><span class="func">WhereAdd(</span><br>
+          <a href="phplivedb_select.htm" class="object">Select</a><span class="type">::</span><span class="func">WhereAdd(</span><br>
           <div class="ident">
             <span class="type">string</span>|<span class="type">string[]</span>|<span class="object">UnitEnum</span>|<span class="object">UnitEnum</span><span class="type">[]</span>
-            <span class="var">$Field</span>,<br>
+            <a href="#fields" class="var">$Field</a>,<br>
 
             <span class="type">string</span>
-            <span class="var">$Value</span>
+            <a href="#value" class="var">$Value</a>
             <span class="type">=</span>
             <span class="const">null</span>,<br>
 
-            <span class="object">Types</span>
-            <span class="var">$Type</span>
+            <a href="enum_types.htm" class="object">Types</a>
+            <a href="#type" class="var">$Type</a>
             <span class="type">=</span>
             <span class="const">null</span>,<br>
 
-            <span class="object">Operators</span>
-            <span class="var">$Operator</span>
+            <a href="enum_operators.htm" class="object">Operators</a>
+            <a href="#operator" class="var">$Operator</a>
             <span class="type">=</span>
-            <span class="object">Operators</span><span class="type">::</span><span class="const">Equal</span>,<br>
+            <a href="enum_operators.htm" class="object">Operators</a><span class="type">::</span><span class="const">Equal</span>,<br>
 
-            <span class="object">AndOr</span>
-            <span class="var">$AndOr</span>
+            <a href="enum_andor.htm" class="object">AndOr</a>
+            <a href="#andor" class="var">$AndOr</a>
             <span class="type">=</span>
-            <span class="object">AndOr</span><span class="type">::</span><span class="const">And</span>,<br>
+            <a href="enum_andor.htm" class="object">AndOr</a><span class="type">::</span><span class="const">And</span>,<br>
 
-            <span class="object">Parenthesis</span>
-            <span class="var">$Parenthesis</span>
+            <a href="enum_parenthesis.htm" class="object">Parenthesis</a>
+            <a href="#parenthesis" class="var">$Parenthesis</a>
             <span class="type">=</span>
-            <span class="object">Parenthesis</span><span class="type">::</span><span class="const">None</span>,<br>
+            <a href="enum_parenthesis.htm" class="object">Parenthesis</a><span class="type">::</span><span class="const">None</span>,<br>
 
             <span class="type">string</span>
-            <span class="var">$CustomPlaceholder</span>
+            <a href="#custom" class="var">$CustomPlaceholder</a>
             <span class="type">=</span>
             <span class="const">null</span>,<br>
 
             <span class="type">bool</span>
-            <span class="var">$BlankIsNull</span>
+            <a href="#blankisnull" class="var">$BlankIsNull</a>
             <span class="type">=</span>
             <span class="const">true</span>,<br>
 
             <span class="type">bool</span>
-            <span class="var">$NoField</span>
+            <a href="#nofield" class="var">$NoField</a>
             <span class="type">=</span>
             <span class="const">false</span>,<br>
 
             <span class="type">bool</span>
-            <span class="var">$NoBind</span>
+            <a href="#nobind" class="var">$NoBind</a>
             <span class="type">=</span>
             <span class="const">false</span>,<br>
 
             <span class="type">bool</span>
-            <span class="var">$Debug</span>
+            <a href="#debug" class="var">$Debug</a>
             <span class="type">=</span>
             <span class="const">false</span>
           </div>
@@ -99,7 +99,7 @@
 
         <div class="title">Parameters</div>
         <p>
-          <a name="field" class="var">$Field</a>
+          <a name="fields" class="var">$Field</a>
           - Field name. Can be null to only add <a href="enum_parenthesis.htm" class="object">Parenthesis</a>;
         </p>
         <p>
@@ -115,11 +115,11 @@
           - The comparing operator;
         </p>
         <p>
-          <span class="var">$AndOr</span>
+          <a name="andor" class="var">$AndOr</a>
           - The relation with the previous field;
         </p>
         <p>
-          <span class="var">$Parenthesis</span>
+          <a name="parenthesis" class="var">$Parenthesis</a>
           - The parenthesis operator;
         </p>
         <p>
@@ -127,11 +127,11 @@
           - String to use as placeholder;
         </p>
         <p>
-          <span class="var">$BlankIsNull</span>
+          <a name="blankisnull" class="var">$BlankIsNull</a>
           - Replace '' to null;
         </p>
         <p>
-          <span class="var">$NoField</span>
+          <a name="nofield" class="var">$NoField</a>
           - To bind a placeholder previously indicated;
         </p>
         <p>
@@ -139,7 +139,7 @@
           - Don't bind in that call. Used with Operators::Sql or same value for different or same field. (Changed to true if Operators::Sql are used)
         </p>
         <p>
-          <span class="var">$Debug</span>
+          <a name="debug" class="var">$Debug</a>
           - Dump the command debug;
         </p>
 
@@ -168,15 +168,15 @@
         Select with one condition:<br>
         <div class="code">
           <span class="var">$consult</span>
-          = <span class="var">$Db</span><span class="type">-></span><span class="func">Select(</span><span class="string">'users'</span><span class="func">)</span>;<br>
+          = <span class="var">$Db</span><span class="type">-></span><a href="phplivedb_select.htm" class="func">Select</a><span class="func">(</span><span class="string">'users'</span><span class="func">)</span>;<br>
           <span class="var">$consult</span><span class="type">-></span><span class="func">WhereAdd(</span><br>
           <div class="ident">
             <span class="string">'email'</span>,<br>
             $_POST<span class="type">[</span><span class="string">'email'</span><span class="type">]</span>,<br>
-            <span class="object">Types</span><span class="type">::</span><span class="const">Str</span>
+            <a href="enum_types.htm" class="object">Types</a><span class="type">::</span><span class="const">Str</span>
           </div>
           <span class="func">)</span>;<br>
-          $consult<span class="type">-></span><span class="func">Run()</span>;<br>
+          $consult<span class="type">-></span><a href="select_run.htm" class="func">Run</a><span class="func">()</span>;<br>
           <span class="comment">//select * from users where email=:email</span><br>
           <span class="comment">//select * from users where email='foo@bar.com'</span><br>
         </div>
@@ -184,22 +184,22 @@
         Select with more conditions:<br>
         <div class="code">
           <span class="var">$consult</span>
-          = <span class="var">$Db</span><span class="type">-></span><span class="func">Select(</span><span class="string">'users'</span><span class="func">)</span>;<br>
+          = <span class="var">$Db</span><span class="type">-></span><a href="phplivedb_select.htm" class="func">Select</a><span class="func">(</span><span class="string">'users'</span><span class="func">)</span>;<br>
           <span class="var">$consult</span><span class="type">-></span><span class="func">WhereAdd(</span><br>
           <div class="ident">
             <span class="string">'email'</span>,<br>
             $_POST<span class="type">[</span><span class="string">'email'</span><span class="type">]</span>,<br>
-            <span class="object">Types</span><span class="type">::</span><span class="const">Str</span>
+            <a href="enum_types.htm" class="object">Types</a><span class="type">::</span><span class="const">Str</span>
           </div>
           <span class="func">)</span>;<br>
           <span class="var">$consult</span><span class="type">-></span><span class="func">WhereAdd(</span><br>
           <div class="ident">
             <span class="string">'active'</span>,<br>
             <span class="const">1</span>,<br>
-            <span class="object">Types</span><span class="type">::</span><span class="const">Int</span>
+            <a href="enum_types.htm" class="object">Types</a><span class="type">::</span><span class="const">Int</span>
           </div>
           <span class="func">)</span>;<br>
-          $consult<span class="type">-></span><span class="func">Run()</span>;<br>
+          $consult<span class="type">-></span><a href="select_run.htm" class="func">Run</a><span class="func">()</span>;<br>
           <span class="comment">//select * from users where email=:email and active=:active</span><br>
           <span class="comment">//select * from users where email='foo@bar.com' and active=1</span><br>
         </div>
@@ -207,26 +207,26 @@
         Select with "Or" and "CustomPlaceholder":<br>
         <div class="code">
           <span class="var">$consult</span>
-          = <span class="var">$Db</span><span class="type">-></span><span class="func">Select(</span><span class="string">'users'</span><span class="func">)</span>;<br>
+          = <span class="var">$Db</span><span class="type">-></span><a href="phplivedb_select.htm" class="func">Select</a><span class="func">(</span><span class="string">'users'</span><span class="func">)</span>;<br>
           <span class="var">$consult</span><span class="type">-></span><span class="func">WhereAdd(</span><br>
           <div class="ident">
             <span class="string">'type'</span>,<br>
             <span class="const">1</span>,<br>
-            <span class="object">Types</span><span class="type">::</span><span class="const">Int</span>
-          </div><br>
+            <a href="enum_types.htm" class="object">Types</a><span class="type">::</span><span class="const">Int</span>
+          </div>
           <span class="func">)</span>;<br>
           <span class="var">$consult</span><span class="type">-></span><span class="func">WhereAdd(</span><br>
           <div class="ident">
             <span class="string">'type'</span>,<br>
             <span class="const">2</span>,<br>
-            <span class="object">Types</span><span class="type">::</span><span class="const">Int</span>,<br>
-            <span class="argument">AndOr</span>:
-            <span class="object">AndOr</span><span class="type">::</span><span class="const">Or</span>,<br>
-            <span class="argument">CustomPlaceholder</span>:
+            <a href="enum_types.htm" class="object">Types</a><span class="type">::</span><span class="const">Int</span>,<br>
+            <a href="#andor" class="argument">AndOr</a>:
+            <a href="enum_andor.htm" class="object">AndOr</a><span class="type">::</span><span class="const">Or</span>,<br>
+            <a href="#custom" class="argument">CustomPlaceholder</a>:
             <span class="string">'type2'</span>
           </div>
           <span class="func">)</span>;</span><br>
-          $consult<span class="type">-></span><span class="func">Run()</span>;<br>
+          $consult<span class="type">-></span><a href="select_run.htm" class="func">Run</a><span class="func">()</span>;<br>
           <span class="comment">//select * from users where type=:type or type=:type2</span><br>
           <span class="comment">//select * from users where type=1 or type=2</span><br>
         </div><br>
@@ -234,13 +234,13 @@
         Operators, Parenthesis, CustomPlaceholder and NoBind:
         <div class="code">
           <span class="var">$consult</span>
-          = <span class="var">$Db</span><span class="type">-></span><span class="func">Select(</span><span class="string">'users'</span><span class="func">)</span>;<br>
+          = <span class="var">$Db</span><span class="type">-></span><a href="phplivedb_select.htm" class="func">Select</a><span class="func">(</span><span class="string">'users'</span><span class="func">)</span>;<br>
 
           <span class="var">$consult</span><span class="type">-></span><span class="func">WhereAdd(</span><br>
           <div class="ident">
             <span class="string">'active'</span>,<br>
             <span class="const">true</span>,<br>
-            <span class="object">Types</span><span class="type">::</span><span class="const">Bool</span>
+            <a href="enum_types.htm" class="object">Types</a><span class="type">::</span><span class="const">Bool</span>
           </div>
           <span class="func">)</span>;<br>
 
@@ -254,13 +254,13 @@
             <span class="type">.</span>
             <span class="string">'%'</span>,<br>
 
-            <span class="object">Types</span><span class="type">::</span><span class="const">Str</span>,<br>
+            <a href="enum_types.htm" class="object">Types</a><span class="type">::</span><span class="const">Str</span>,<br>
 
-            <span class="argument">Operator</span>:
-            <span class="object">Operators</span><span class="type">::</span><span class="const">Like</span>,<br>
+            <a href="#operator" class="argument">Operator</a>:
+            <a href="enum_operators.htm" class="object">Operators</a><span class="type">::</span><span class="const">Like</span>,<br>
 
-            <span class="argument">Parenthesis</span>:
-            <span class="object">Parenthesis</span><span class="type">::</span><span class="const">Open</span>,
+            <a href="#parenthesis" class="argument">Parenthesis</a>:
+            <a href="enum_parenthesis.htm" class="object">Parenthesis</a><span class="type">::</span><span class="const">Open</span>,
           </div>
           <span class="func">)</span>;<br>
 
@@ -268,23 +268,23 @@
           <div class="ident">
             <span class="string">'email'</span>,<br>
 
-            <span class="argument">Operator</span>:
-            <span class="object">Operators</span><span class="type">::</span><span class="const">Like</span>,<br>
+            <a href="#operator" class="argument">Operator</a>:
+            <a href="enum_operators.htm" class="object">Operators</a><span class="type">::</span><span class="const">Like</span>,<br>
 
-            <span class="argument">AndOr</span>:
-            <span class="object">AndOr</span><span class="type">::</span><span class="const">Or</span>,<br>
+            <a href="#andor" class="argument">AndOr</a>:
+            <a href="enum_andor.htm" class="object">AndOr</a><span class="type">::</span><span class="const">Or</span>,<br>
 
-            <span class="argument">Parenthesis</span>:
-            <span class="object">Parenthesis</span><span class="type">::</span><span class="const">Close</span>,<br>
+            <a href="#parenthesis" class="argument">Parenthesis</a>:
+            <a href="enum_parenthesis.htm" class="object">Parenthesis</a><span class="type">::</span><span class="const">Close</span>,<br>
 
-            <span class="argument">CustomPlaceholder</span>:
+            <a href="#custom" class="argument">CustomPlaceholder</a>:
             <span class="string">'name'</span>,<br>
 
-            <span class="argument">NoBind</span>:
+            <a href="#nobind" class="argument">NoBind</a>:
             <span class="const">true</span>
           </div>
           <span class="func">)</span>;</span><br>
-          $consult<span class="type">-></span><span class="func">Run()</span>;<br>
+          $consult<span class="type">-></span><a href="select_run.htm" class="func">Run</a><span class="func">()</span>;<br>
           <span class="comment">//select * from users where active=:active and (name like :name or email like :name)</span><br>
           <span class="comment">//select * from users where active=1 and (name like '%foo%' or email like '%foo%')</span>
         </div>
@@ -292,20 +292,20 @@
         Select with like operator in many fields:<br>
         <div class="code">
           <span class="var">$consult</span>
-          = <span class="var">$Db</span><span class="type">-></span><span class="func">Select(</span><span class="string">'users'</span><span class="func">)</span><br>
+          = <span class="var">$Db</span><span class="type">-></span><a href="select_select.htm" class="func">Select</a><span class="func">(</span><span class="string">'users'</span><span class="func">)</span><br>
           <span class="type">-></span><span class="func">WhereAdd(</span><br>
           <div class="ident">
             <span class="type">[</span><span class="string">'email'</span>,
             <span class="string">'name'</span><span class="type">,</span>
             <span class="string">'street'</span><span class="type">]</span>,<br>
             $_POST<span class="type">[</span><span class="string">'value'</span><span class="type">]</span>,<br>
-            <span class="object">Types</span><span class="type">::</span><span class="const">Str</span>,<br>
-            <span class="object">Operators</span><span class="type">::</span><span class="const">Like</span>,<br>
-            <span class="object">AndOr</span><span class="type">::</span><span class="const">Or</span>,<br>
-            <span class="argument">CustomPlaceholder:</span> <span class="string">'value'</span>
+            <a href="enum_types.htm" class="object">Types</a><span class="type">::</span><span class="const">Str</span>,<br>
+            <a href="enum_operators.htm" class="object">Operators</a><span class="type">::</span><span class="const">Like</span>,<br>
+            <a href="enum_andor.htm" class="object">AndOr</a><span class="type">::</span><span class="const">Or</span>,<br>
+            <a href="#custom" class="argument">CustomPlaceholder:</a> <span class="string">'value'</span>
           </div>
           <span class="func">)</span><br>
-          <span class="type">-></span><span class="func">Run()</span>;<br>
+          <span class="type">-></span><a href="select_run.htm" class="func">Run</a><span class="func">()</span>;<br>
           <span class="comment">//select * from users where email like :value or name like :value or street like :value</span><br>
           <span class="comment">//select * from users where email like '%bob%' or name like '%bob%' or street like '%bob%'</span><br>
         </div>
