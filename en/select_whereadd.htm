@@ -22,9 +22,6 @@
 
         <div class="title">Sintaxe</div><br>
         <div class="code">
-          <iframe src="version_select.htm" class="import"></iframe>
-          <br>
-
           <span class="type">namespace</span>
           <span class="object">ProtocolLive</span>\<span class="object">PhpLiveDb</span>;<br>
           <span class="type">use</span>
@@ -38,63 +35,74 @@
           };<br>
           <br>
 
-          <span class="type">function</span>
-          <a href="phplivedb_select.htm" class="object">Select</a><span class="type">::</span><span class="func">WhereAdd(</span><br>
-          <div class="ident">
-            <span class="type">string</span>|<span class="type">string[]</span>|<span class="object">UnitEnum</span>|<span class="object">UnitEnum</span><span class="type">[]</span>
-            <a href="#fields" class="var">$Field</a>,<br>
-
-            <span class="type">string</span>
-            <a href="#value" class="var">$Value</a>
-            <span class="type">=</span>
-            <span class="const">null</span>,<br>
-
-            <a href="enum_types.htm" class="object">Types</a>
-            <a href="#type" class="var">$Type</a>
-            <span class="type">=</span>
-            <span class="const">null</span>,<br>
-
-            <a href="enum_operators.htm" class="object">Operators</a>
-            <a href="#operator" class="var">$Operator</a>
-            <span class="type">=</span>
-            <a href="enum_operators.htm" class="object">Operators</a><span class="type">::</span><span class="const">Equal</span>,<br>
-
-            <a href="enum_andor.htm" class="object">AndOr</a>
-            <a href="#andor" class="var">$AndOr</a>
-            <span class="type">=</span>
-            <a href="enum_andor.htm" class="object">AndOr</a><span class="type">::</span><span class="const">And</span>,<br>
-
-            <a href="enum_parenthesis.htm" class="object">Parenthesis</a>
-            <a href="#parenthesis" class="var">$Parenthesis</a>
-            <span class="type">=</span>
-            <a href="enum_parenthesis.htm" class="object">Parenthesis</a><span class="type">::</span><span class="const">None</span>,<br>
-
-            <span class="type">string</span>
-            <a href="#custom" class="var">$CustomPlaceholder</a>
-            <span class="type">=</span>
-            <span class="const">null</span>,<br>
-
-            <span class="type">bool</span>
-            <a href="#blankisnull" class="var">$BlankIsNull</a>
-            <span class="type">=</span>
-            <span class="const">true</span>,<br>
-
-            <span class="type">bool</span>
-            <a href="#nofield" class="var">$NoField</a>
-            <span class="type">=</span>
-            <span class="const">false</span>,<br>
-
-            <span class="type">bool</span>
-            <a href="#nobind" class="var">$NoBind</a>
-            <span class="type">=</span>
-            <span class="const">false</span>,<br>
-
-            <span class="type">bool</span>
-            <a href="#debug" class="var">$Debug</a>
-            <span class="type">=</span>
-            <span class="const">false</span>
+          <div class="comment">
+            /**<br>
+            <iframe src="version_select.htm" class="import"></iframe><br>
+            &nbsp;*/
           </div>
-          <span class="func">)</span><span class="type">:</span><span class="object">self</span>|<span class="type">array</span>|<span class="type">false</span>;
+          <span class="type">final class</span>
+          <a href="phplivedb_select.htm" class="object">Select</a><span class="type">{</span><br>
+          <div class="ident">
+
+            <span class="type">public function</span>
+            <span class="func">WhereAdd(</span><br>
+            <div class="ident">
+              <span class="type">string</span>|<span class="type">string[]</span>|<span class="object">UnitEnum</span>|<span class="object">UnitEnum</span><span class="type">[]</span>
+              <a href="#fields" class="var">$Field</a>,<br>
+              
+              <span class="type">string</span>
+              <a href="#value" class="var">$Value</a>
+              <span class="type">=</span>
+              <span class="const">null</span>,<br>
+              
+              <a href="enum_types.htm" class="object">Types</a>
+              <a href="#type" class="var">$Type</a>
+              <span class="type">=</span>
+              <span class="const">null</span>,<br>
+              
+              <a href="enum_operators.htm" class="object">Operators</a>
+              <a href="#operator" class="var">$Operator</a>
+              <span class="type">=</span>
+              <a href="enum_operators.htm" class="object">Operators</a><span class="type">::</span><span class="const">Equal</span>,<br>
+              
+              <a href="enum_andor.htm" class="object">AndOr</a>
+              <a href="#andor" class="var">$AndOr</a>
+              <span class="type">=</span>
+              <a href="enum_andor.htm" class="object">AndOr</a><span class="type">::</span><span class="const">And</span>,<br>
+              
+              <a href="enum_parenthesis.htm" class="object">Parenthesis</a>
+              <a href="#parenthesis" class="var">$Parenthesis</a>
+              <span class="type">=</span>
+              <a href="enum_parenthesis.htm" class="object">Parenthesis</a><span class="type">::</span><span class="const">None</span>,<br>
+              
+              <span class="type">string</span>
+              <a href="#custom" class="var">$CustomPlaceholder</a>
+              <span class="type">=</span>
+              <span class="const">null</span>,<br>
+              
+              <span class="type">bool</span>
+              <a href="#blankisnull" class="var">$BlankIsNull</a>
+              <span class="type">=</span>
+              <span class="const">true</span>,<br>
+              
+              <span class="type">bool</span>
+              <a href="#nofield" class="var">$NoField</a>
+              <span class="type">=</span>
+              <span class="const">false</span>,<br>
+              
+              <span class="type">bool</span>
+              <a href="#nobind" class="var">$NoBind</a>
+              <span class="type">=</span>
+              <span class="const">false</span>,<br>
+              
+              <span class="type">bool</span>
+              <a href="#debug" class="var">$Debug</a>
+              <span class="type">=</span>
+              <span class="const">false</span>
+            </div>
+            <span class="func">)</span><span class="type">:</span><span class="object">self</span>|<span class="type">array</span>|<span class="type">false</span>;
+          </div>
+          <span class="type">}</span>
         </div>
 
         <div class="title">Parameters</div>

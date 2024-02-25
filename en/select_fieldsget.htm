@@ -22,30 +22,37 @@
 
         <div class="title">Sintaxe</div><br>
         <div class="code">
-          <iframe src="version_select.htm" class="import"></iframe>
-          <br>
-
           <span class="type">namespace</span>
           <span class="object">ProtocolLive</span>\<span class="object">PhpLiveDb</span>;<br>
           <br>
 
-          <span class="type">function</span>
-          <span class="object">Select</span><span class="type">::</span><span class="func">FieldsGet(</span><br>
-          <div class="ident">
-            <span class="type">string</span>|<span class="object">UnitEnum</span>
-            <a href="#Table" class="var">$Table</a>
-            <span class="type">=</span>
-            <span class="const">null</span>,<br>
-            <span class="object">FieldsGetReturn</span>
-            <a href="#Return" class="var">$Return</a>
-            <span class="type">=</span>
-            <span class="object">FieldsGetReturn</span><span class="type">::</span><span class="const">String</span>,<br>
-            <span class="type">string</span>
-            <a href="#Alias" class="var">$Alias</a>
-            <span class="type">=</span>
-            <span class="const">null</span><br>
+          <div class="comment">
+            /**<br>
+            <iframe src="version_select.htm" class="import"></iframe><br>
+            &nbsp;*/
           </div>
-          <span class="func">)</span><span class="type">:array</span>|<span class="type">string</span>;
+          <span class="type">final class</span>
+          <span class="object">Select</span><span class="type">{</span><br>
+          <div class="ident">
+            <span class="type">public function</span>
+            <span class="func">FieldsGet(</span><br>
+            <div class="ident">
+              <span class="type">string</span>|<span class="object">UnitEnum</span>
+              <a href="#Table" class="var">$Table</a>
+              <span class="type">=</span>
+              <span class="const">null</span>,<br>
+              <span class="object">FieldsGetReturn</span>
+              <a href="#Return" class="var">$Return</a>
+              <span class="type">=</span>
+              <span class="object">FieldsGetReturn</span><span class="type">::</span><span class="const">String</span>,<br>
+              <span class="type">string</span>
+              <a href="#Alias" class="var">$Alias</a>
+              <span class="type">=</span>
+              <span class="const">null</span><br>
+            </div>
+            <span class="func">)</span><span class="type">:array</span>|<span class="type">string</span>;
+          </div>
+          <span class="type">}</span>
         </div>
 
         <div class="title">Parameters</div>

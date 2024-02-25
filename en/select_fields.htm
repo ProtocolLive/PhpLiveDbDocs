@@ -22,20 +22,28 @@
 
         <div class="title">Sintaxe</div><br>
         <div class="code">
-          <iframe src="version_select.htm" class="import"></iframe>
-          <br>
-
           <span class="type">namespace</span>
           <span class="object">ProtocolLive</span>\<span class="object">PhpLiveDb</span>;<br>
           <br>
 
-          <span class="type">function</span>
-          <span class="object">Select</span><span class="type">::</span><span class="func">Fields(</span><br>
-          <div class="ident">
-            <span class="type">string</span>|<span class="object">UnitEnum</span>|<span class="type">string[]</span>|<span class="object">UnitEnum</span><span class="type">[]</span>
-            <span class="var">$Fields</span><br>
+          <div class="comment">
+            /**<br>
+            <iframe src="version_select.htm" class="import"></iframe><br>
+            &nbsp;*/
           </div>
-          <span class="func">)</span><span class="type">:</span><span class="object">self</span>;
+
+          <span class="type">final class</span>
+          <a href="phplivedb_select.htm" class="object">Select</a><span class="type">{</span><br>
+          <div class="ident">
+            <span class="type">public function</span>
+            <span class="func">Fields(</span><br>
+            <div class="ident">
+              <span class="type">string</span>|<span class="object">UnitEnum</span>|<span class="type">string[]</span>|<span class="object">UnitEnum</span><span class="type">[]</span>
+              <span class="var">$Fields</span><br>
+            </div>
+            <span class="func">)</span><span class="type">:</span><span class="object">self</span>;
+          </div>
+          <span class="type">}</span>
         </div>
 
         <div class="title">Parameters</div>
@@ -50,9 +58,9 @@
         <div class="code">
           <span class="var">$consult</span>
           <span class="type">=</span>
-          <span class="var">$Db</span><span class="type">-></span><span class="func">Select(</span><span class="string">'users'</span><span class="func">)</span>;<br>
+          <span class="var">$Db</span><span class="type">-></span><a href="phplivedb_select.htm" class="func">Select</a><span class="func">(</span><span class="string">'users'</span><span class="func">)</span>;<br>
           <span class="var">$consult</span><span class="type">-></span><span class="func">Fields(</span><span class="string">'user_id,name,email,active,lastlogin'</span><span class="func">)</span>;<br>
-          $consult<span class="type">-></span><span class="func">Run()</span>;<br>
+          $consult<span class="type">-></span><a href="select_run.htm" class="func">Run</a><span class="func">()</span>;<br>
           <span class="comment">//select user_id,name,email,active,lastlogin from users</span><br>
         </div>
 
@@ -60,13 +68,13 @@
         <div class="code">
           <span class="var">$consult</span>
           <span class="type">=</span>
-          <span class="var">$Db</span><span class="type">-></span><span class="func">Select(</span><span class="string">'users'</span><span class="func">)</span>;<br>
+          <span class="var">$Db</span><span class="type">-></span><a href="phplivedb_select.htm" class="func">Select</a><span class="func">(</span><span class="string">'users'</span><span class="func">)</span>;<br>
           <span class="var">$consult</span><span class="type">-></span><span class="func">Fields(</span><span class="type">[</span><span class="string">'user_id'</span>,
           <span class="string">'name'</span>,
           <span class="string">'email'</span>,
           <span class="string">'active'</span>,
           <span class="string">'lastlogin'</span><span class="type">]</span><span class="func">)</span>;<br>
-          $consult<span class="type">-></span><span class="func">Run()</span>;<br>
+          $consult<span class="type">-></span><a href="select_run.htm" class="func">Run</a><span class="func">()</span>;<br>
           <span class="comment">//select user_id,name,email,active,lastlogin from users</span><br>
         </div>
 
@@ -74,7 +82,7 @@
         <div class="code">
           <span class="var">$consult</span>
           <span class="type">=</span>
-          <span class="var">$Db</span><span class="type">-></span><span class="func">Select(</span><span class="string">'users u'</span><span class="func">)</span>;<br>
+          <span class="var">$Db</span><span class="type">-></span><a href="phplivedb_select.htm" class="func">Select</a><span class="func">(</span><span class="string">'users u'</span><span class="func">)</span>;<br>
           <span class="var">$consult</span><span class="type">-></span><span class="func">Fields(</span><span class="string">'</span><br>
           <div class="ident">
             <span class="string">
@@ -88,7 +96,7 @@
             </span>
           </div>
           <span class="string">'</span></span><span class="func">)</span>;<br>
-          $consult<span class="type">-></span><span class="func">Run()</span>;<br>
+          $consult<span class="type">-></span><a href="select_run.htm" class="func">Run</a><span class="func">()</span>;<br>
           <span class="comment">//select user_id,(select value from socialmedias where name='Telegram' and user_id=u.user_id) as telegram from users u</span><br>
         </div>
 
@@ -96,7 +104,7 @@
         <div class="code">
           <span class="var">$consult</span>
           <span class="type">=</span>
-          <span class="var">$Db</span><span class="type">-></span><span class="func">Select(</span><span class="string">'users u'</span><span class="func">)</span>;<br>
+          <span class="var">$Db</span><span class="type">-></span><a href="phplivedb_select.htm" class="func">Select</a><span class="func">(</span><span class="string">'users u'</span><span class="func">)</span>;<br>
           <span class="var">$consult</span><span class="type">-></span><span class="func">Fields(</span><span class="type">[</span><br>
           <div class="ident">
             <span class="string">'user_id'</span>,<br>
@@ -105,7 +113,7 @@
             </span>
           </div>
           <span class="type">]</span><span class="func">)</span>;<br>
-          $consult<span class="type">-></span><span class="func">Run()</span>;<br>
+          $consult<span class="type">-></span><a href="select_run.htm" class="func">Run</a><span class="func">()</span>;<br>
           <span class="comment">//select user_id,(select value from socialmedias where name='Telegram' and user_id=u.user_id) as telegram from users u</span><br>
         </div>
 
@@ -129,9 +137,9 @@
 
           <span class="var">$consult</span>
           <span class="type">=</span>
-          <span class="var">$Db</span><span class="type">-></span><span class="func">Select(</span><span class="string">'users'</span><span class="func">)</span>;<br>
+          <span class="var">$Db</span><span class="type">-></span><a href="phplivedb_select.htm" class="func">Select</a><span class="func">(</span><span class="string">'users'</span><span class="func">)</span>;<br>
           <span class="var">$consult</span><span class="type">-></span><span class="func">Fields(</span><span class="object">UserFields</span><span class="type">::</span><span class="const">Email</span><span class="func">)</span>;<br>
-          $consult<span class="type">-></span><span class="func">Run()</span>;<br>
+          $consult<span class="type">-></span><a href="select_run.htm" class="func">Run</a><span class="func">()</span>;<br>
           <span class="comment">//select email from users</span><br>
         </div>
 

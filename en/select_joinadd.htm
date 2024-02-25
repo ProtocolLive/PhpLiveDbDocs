@@ -22,28 +22,36 @@
 
         <div class="title">Sintaxe</div><br>
         <div class="code">
-          <iframe src="version_select.htm" class="import"></iframe>
-          <br>
-
           <span class="type">namespace</span>
           <span class="object">ProtocolLive</span>\<span class="object">PhpLiveDb</span>;<br>
           <span class="type">use</span>
           <span class="object">ProtocolLive</span>\<span class="object">PhpLiveDb</span>\<span class="object">Enums</span>\<span class="object">Joins</span>;<br>
           <br>
 
-          <span class="type">function</span>
-          <span class="object">Select</span><span class="type">::</span><span class="func">JoinAdd(</span><br>
-          <div class="ident">
-            <span class="type">string</span>|<span class="object">UnitEnum</span>
-            <a href="#Table" class="var">$Table</a>,<br>
-            <span class="type">string</span>|<span class="type">null</span>|<span class="object">UnitEnum</span>
-            <a href="#Using" class="var">$Using</a> <span class="type">=</span> <span class="const">null</span>,<br>
-            <span class="type">string</span>|<span class="type">null</span>
-            <a href="#On" class="var">$On</a> <span class="type">=</span> <span class="const">null</span>,<br>
-            <span class="object">Joins</span>
-            <a href="#Type" class="var">$Type</a> <span class="type">=</span> <span class="object">Joins</span><span class="type">::</span><span class="const">Left</span>
+          <div class="comment">
+            /**<br>
+            <iframe src="version_select.htm" class="import"></iframe><br>
+            &nbsp;*/
           </div>
-          <span class="func">)</span><span class="type">:</span><span class="object">self</span>;
+          <span class="type">final class</span>
+          <span class="object">Select</span><span class="type">{</span><br>
+          <div class="ident">
+
+            <span class="type">public function</span>
+            <span class="func">JoinAdd(</span><br>
+            <div class="ident">
+              <span class="type">string</span>|<span class="object">UnitEnum</span>
+              <a href="#Table" class="var">$Table</a>,<br>
+              <span class="type">string</span>|<span class="type">null</span>|<span class="object">UnitEnum</span>
+              <a href="#Using" class="var">$Using</a> <span class="type">=</span> <span class="const">null</span>,<br>
+              <span class="type">string</span>|<span class="type">null</span>
+              <a href="#On" class="var">$On</a> <span class="type">=</span> <span class="const">null</span>,<br>
+              <span class="object">Joins</span>
+              <a href="#Type" class="var">$Type</a> <span class="type">=</span> <span class="object">Joins</span><span class="type">::</span><span class="const">Left</span>
+            </div>
+            <span class="func">)</span><span class="type">:</span><span class="object">self</span>;
+          </div>
+          <span class="type">}</span>
         </div>
 
         <div class="title">Parameters</div>
