@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="global.css">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:site_name" content="PhpLiveDb Docs">
+  <meta property="og:title" content="PhpLiveDb - Select::OrderAdd">
+  <meta property="og:description" content="PhpLiveDb library documentation">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://protocollive.github.io/PhpLiveDB">
+  <meta property="og:image" content="https://opengraph.githubassets.com/31f593b768176dcc3fd800bfbfa6b9d47b7ea0aca35cc40d438893fe35776f3e/ProtocolLive/PhpLiveDB">
+  <meta property="og:image:width" content="864">
+  <meta property="og:image:height" content="432">
+  <title>PhpLiveDb - Select::OrderAdd</title>
+</head>
+<body>
+  <table>
+    <tr>
+      <td style="width:100%; background-color: #F2F2F2; padding: 20px;">
+        <div class="maintitle">Select::OrderAdd</div>
+        <p>Add a field to list of order parameter.</p>
+
+        <div class="title">Sintaxe</div><br>
+        <div class="code">
+          <span class="type">namespace</span>
+          <span class="object">ProtocolLive</span><span class="type">\</span><span class="object">PhpLiveDb</span>;<br>
+          <br>
+
+          <div class="comment">
+            /**<br>
+            <iframe src="version_select.htm" class="import"></iframe><br>
+            &nbsp;*/
+          </div>
+          <span class="type">final class</span>
+          <a href="phplivedb_select.htm" class="object">Select</a><span class="type">{</span><br>
+          <div class="ident">
+            <span class="type">public function</span>
+            <span class="func">OrderAdd(</span><br>
+            <div class="ident">
+              <span class="type">string</span>|<span class="object">UnitEnum</span>
+              <a href="#Field" class="var">$Field</a><br>
+            </div>
+            <span class="func">)</span><span class="type">:</span><span class="object">self</span>;
+          </div>
+          <span class="type">}</span>
+        </div>
+
+        <div class="title">Parameters</div>
+        <p>
+          <a name="Fields" class="var">$Field</a>
+          - A field name. Can be used the keywords "asc" and "desc";
+        </p>
+
+        <div class="title">Examples</div><br>
+        <div class="code">
+          <span class="var">$consult</span>
+          <span class="type">=</span>
+          <span class="var">$Db</span><span class="type">-></span><a href="phplivedb_select.htm" class="func">Select</a><span class="func">(</span><span class="string">'users'</span><span class="func">)</span><br>
+          <span class="type">-></span><span class="func">OrderAdd(</span><span class="string">'email'</span><span class="func">)</span><br>
+          <span class="type">-></span><span class="func">OrderAdd(</span><span class="string">'lastlogin'</span><span class="func">)</span><br>
+          <span class="type">-></span><a href="select_run.htm" class="func">Run</a><span class="func">()</span>;<br>
+          <span class="comment">//select * from users order by email,lastlogin</span><br>
+        </div>
+
+      </td>
+      <td style="color:#ccc;font-size:18px;vertical-align:top">
+        <iframe src="menu.htm" class="menu2"></iframe>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
