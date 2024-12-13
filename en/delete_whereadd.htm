@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="global.css">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:site_name" content="PhpLiveDb Docs">
+  <meta property="og:title" content="PhpLiveDb - Delete - WhereAdd">
+  <meta property="og:description" content="PhpLiveDb library documentation">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://protocollive.github.io/PhpLiveDB">
+  <meta property="og:image" content="https://opengraph.githubassets.com/31f593b768176dcc3fd800bfbfa6b9d47b7ea0aca35cc40d438893fe35776f3e/ProtocolLive/PhpLiveDB">
+  <meta property="og:image:width" content="864">
+  <meta property="og:image:height" content="432">
+  <title>PhpLiveDb - Delete::WhereAdd</title>
+</head>
+<body>
+  <table>
+    <tr>
+      <td style="width:100%;background-color:#F2F2F2;padding:20px">
+        <div class="maintitle">Delete::WhereAdd</div>
+        <p>Add a field to filter the delete</p>
+
+        <div class="title">Sintaxe</div><br>
+        <div class="code">
+          <span class="type">namespace</span>
+          <span class="object">ProtocolLive</span>\<span class="object">PhpLiveDb</span>;<br>
+          <span class="type">use</span>
+          <span class="object">ProtocolLive</span>\<span class="object">PhpLiveDb</span>\<span class="object">Enums</span>\{<br>
+          <div class="ident">
+            <a href="enum_andor.htm" class="object">AndOr</a>,<br>
+            <a href="enum_operators.htm" class="object">Operators</a>,<br>
+            <a href="enum_parenthesis.htm" class="object">Parenthesis</a>,<br>
+            <a href="enum_types.htm" class="object">Types</a><br>
+          </div>
+          };<br>
+          <br>
+
+          <div class="comment">
+            /**<br>
+            <iframe src="version_delete.htm" class="import"></iframe><br>
+            &nbsp;*/
+          </div>
+          <span class="type">final class</span>
+          <a href="phplivedb_delete.htm" class="object">Delete</a><span class="type">{</span><br>
+          <div class="ident">
+
+            <span class="type">public function</span>
+            <span class="func">WhereAdd(</span><br>
+            <div class="ident">
+              <span class="type">string</span>|<span class="type">string[]</span>|<span class="object">UnitEnum</span>|<span class="object">UnitEnum</span><span class="type">[]</span>
+              <a href="#fields" class="var">$Field</a>,<br>
+              
+              <span class="type">string</span>
+              <a href="#value" class="var">$Value</a>
+              <span class="type">=</span>
+              <span class="const">null</span>,<br>
+              
+              <a href="enum_types.htm" class="object">Types</a>
+              <a href="#type" class="var">$Type</a>
+              <span class="type">=</span>
+              <span class="const">null</span>,<br>
+              
+              <a href="enum_operators.htm" class="object">Operators</a>
+              <a href="#operator" class="var">$Operator</a>
+              <span class="type">=</span>
+              <a href="enum_operators.htm" class="object">Operators</a><span class="type">::</span><span class="const">Equal</span>,<br>
+              
+              <a href="enum_andor.htm" class="object">AndOr</a>
+              <a href="#andor" class="var">$AndOr</a>
+              <span class="type">=</span>
+              <a href="enum_andor.htm" class="object">AndOr</a><span class="type">::</span><span class="const">And</span>,<br>
+              
+              <a href="enum_parenthesis.htm" class="object">Parenthesis</a>
+              <a href="#parenthesis" class="var">$Parenthesis</a>
+              <span class="type">=</span>
+              <a href="enum_parenthesis.htm" class="object">Parenthesis</a><span class="type">::</span><span class="const">None</span>,<br>
+              
+              <span class="type">string</span>
+              <a href="#custom" class="var">$CustomPlaceholder</a>
+              <span class="type">=</span>
+              <span class="const">null</span>,<br>
+              
+              <span class="type">bool</span>
+              <a href="#blankisnull" class="var">$BlankIsNull</a>
+              <span class="type">=</span>
+              <span class="const">true</span>,<br>
+              
+              <span class="type">bool</span>
+              <a href="#nofield" class="var">$NoField</a>
+              <span class="type">=</span>
+              <span class="const">false</span>,<br>
+              
+              <span class="type">bool</span>
+              <a href="#nobind" class="var">$NoBind</a>
+              <span class="type">=</span>
+              <span class="const">false</span>,<br>
+              
+              <span class="type">bool</span>
+              <a href="#debug" class="var">$Debug</a>
+              <span class="type">=</span>
+              <span class="const">false</span>
+            </div>
+            <span class="func">)</span><span class="type">:</span><span class="object">self</span>|<span class="type">array</span>|<span class="type">false</span>;
+          </div>
+          <span class="type">}</span>
+        </div>
+
+        <div class="title">Parameters</div>
+        <p>
+          <a name="fields" class="var">$Field</a>
+          - Field name. Can be null to only add <a href="enum_parenthesis.htm" class="object">Parenthesis</a>;
+        </p>
+        <p>
+          <a name="value" class="var">$Value</a>
+          - The field value;
+        </p>
+        <p>
+          <a name="type" class="var">$Type</a>
+          - The field type;
+        </p>
+        <p>
+          <a name="operator" class="var">$Operator</a>
+          - The comparing operator;
+        </p>
+        <p>
+          <a name="andor" class="var">$AndOr</a>
+          - The relation with the previous field;
+        </p>
+        <p>
+          <a name="parenthesis" class="var">$Parenthesis</a>
+          - The parenthesis operator;
+        </p>
+        <p>
+          <a name="custom" class="var">$CustomPlaceholder</a>
+          - String to use as placeholder;
+        </p>
+        <p>
+          <a name="blankisnull" class="var">$BlankIsNull</a>
+          - Replace '' to null;
+        </p>
+        <p>
+          <a name="nofield" class="var">$NoField</a>
+          - To bind a placeholder previously indicated;
+        </p>
+        <p>
+          <a name="nobind" class="var">$NoBind</a>
+          - Don't bind in that call. Used with Operators::Sql or same value for different or same field. (Changed to true if Operators::Sql are used)
+        </p>
+        <p>
+          <a name="debug" class="var">$Debug</a>
+          - Dump the command debug;
+        </p>
+
+        <div class="title">Notes</div>
+        <p>
+          - When the <a href="#value">$Value</a> is null, the <a href="#type">Type</a> are changed to <span
+            class="var">Types::Null</span>;
+        </p>
+        <p>
+          - When the <a href="#operator">$Operator</a> is <span class="var">Operators::Sql</span>, the <a
+            href="#nobind">$NoBind</a> are changed to <span class="var">true</span>;
+        </p>
+        <p>
+          - When using a SQL expression in <a href="#field">$Field</a>, its mandatory to use the <a
+            href="#custom">$CustomPlaceholder</a>;
+        </p>
+
+        <div class="title">See more</div>
+        <p>- <a href="enum_andor.htm" class="object">AndOr</a></p>
+        <p>- <a href="enum_operators.htm" class="object">Operators</a></p>
+        <p>- <a href="enum_parenthesis.htm" class="object">Parenthesis</a></p>
+        <p>- <a href="enum_types.htm" class="object">Types</a></p>
+
+        <div class="title">Examples</div><br>
+
+        <div class="code">
+          $Db<span class="type">-></span><a href="phplivedb_delete.htm" class="func">Delete</a><span class="func">(</span><span class="string">'users'</span><span class="func">)</span><br>
+          <span class="type">-></span><span class="func">WhereAdd(</span><span class="string">'id'</span>,
+          <span class="const">10</span>, <span class="object">Types</span>::<span class="const">Int</span><span class="func">)</span><br>
+          <span class="type">-></span><a href="delete_run.htm" class="func">Run</a><span class="func">()</span>;<br>
+        </div>
+      </td>
+      <td style="color:#ccc;font-size:18px;vertical-align:top">
+        <iframe src="menu.htm" class="menu2"></iframe>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
