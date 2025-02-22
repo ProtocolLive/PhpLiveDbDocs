@@ -24,15 +24,30 @@
 
         <div class="title">Sintaxe</div><br>
         <div class="code">
-          <span class="comment">//Version 2024.02.22.00</span><br>
           <br>
           <span class="type">namespace</span>
           <span class="object">ProtocolLive</span>\<span class="object">PhpLiveDb</span>\<span class="object">Enums</span>;<br>
           <br>
 
+          <div class="comment">
+            /**<br>
+            &nbsp;* <span class="type">@version</span> 2025.02.21.03<br>
+            &nbsp;*/
+          </div>
+          
           <span class="type">enum</span>
           <span class="object">Operators</span><span class="type">:string</span>{<br>
           <div class="ident">
+            <span class="type">case</span>
+            <span class="const">Between</span>
+            <span class="type">=</span>
+            <span class="string">' between'</span>;<br>
+
+            <span class="type">case</span>
+            <span class="const">BetweenNot</span>
+            <span class="type">=</span>
+            <span class="string">' not between'</span>;<br>
+
             <span class="type">case</span>
             <span class="const">Bigger</span>
             <span class="type">=</span>
@@ -59,9 +74,19 @@
             <span class="string">'exists'</span>;<br>
 
             <span class="type">case</span>
+            <span class="const">ExistsNot</span>
+            <span class="type">=</span>
+            <span class="string">'not exists'</span>;<br>
+
+            <span class="type">case</span>
             <span class="const">In</span>
             <span class="type">=</span>
             <span class="string">' in'</span>;<br>
+
+            <span class="type">case</span>
+            <span class="const">InNot</span>
+            <span class="type">=</span>
+            <span class="string">' not in'</span>;<br>
 
             <span class="type">case</span>
             <span class="const">IsNotNull</span>
@@ -72,11 +97,6 @@
             <span class="const">Like</span>
             <span class="type">=</span>
             <span class="string">' like '</span>;<br>
-
-            <span class="type">case</span>
-            <span class="const">NotIn</span>
-            <span class="type">=</span>
-            <span class="string">' not in'</span>;<br>
 
             <span class="type">case</span>
             <span class="const">Smaller</span>
