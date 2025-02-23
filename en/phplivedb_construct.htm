@@ -28,48 +28,57 @@
         </div>
         <br>
         <div class="code">
-          <iframe src="version_phplivedb.htm" class="import"></iframe>
-          <br>
-
           <span class="type">namespace</span>
-          <span class="object">ProtocolLive</span>\<span class="object">PhpLiveDb</span>;<br>
+          <span class="object">ProtocolLive</span><span class="type">\</span><span class="object">PhpLiveDb</span>;<br>
+          <span class="type">use</span>
+          <span class="object">ProtocolLive</span><span class="type">\</span><span class="object">PhpLiveDb</span><span class="type">\</span><span class="object">Enums</span><span class="type">\</span><span class="object">Drivers</span>;
+          <br>
           <br>
 
-          <span class="type">public function</span>
-          <span class="object">PhpLiveDb</span><span class="type">::</span><span
-            class="object">__construct(</span><br>
+          <span class="comment">/**</span><br>
+          <iframe src="version_phplivedb.htm" class="import"></iframe><br>
+          <span class="comment">&nbsp;*/</span><br>
+
+          <span class="type">final class</span>
+          <span class="object">PhpLiveDb</span><span class="type">{</span><br>
+
           <div class="ident">
-            <span class="type">string</span> <a href="#ip" class="var">$Ip</a>,<br>
-            <span class="type">string</span> <a href="#user" class="var">$User</a>,<br>
-            <span class="type">string</span> <a href="#pwd" class="var">$Pwd</a>,<br>
-            <span class="type">string</span> <a href="#db" class="var">$Db</a>,<br>
+            <span class="type">public function</span> <span class="func">__construct(</span><br>
+            <div class="ident">
+              <span class="type">string</span> <a href="#ip" class="var">$Ip</a>,<br>
+              <span class="type">string</span> <a href="#user" class="var">$User</a>,<br>
+              <span class="type">string</span> <a href="#pwd" class="var">$Pwd</a>,<br>
+              <span class="type">string</span> <a href="#db" class="var">$Db</a>,<br>
 
-            <span class="type">string</span>
-            <a href="#drive" class="var">$Drive</a>
-            <span class="type">=</span>
-            <span class="string">'mysql'</span>,<br>
+              <span class="type">string</span>
+              <a href="#drive" class="var">$Drive</a>
+              <span class="type">=</span>
+              <span class="object">Drivers</span><span class="type">::</span><span class="const">MySql</span>,<br>
 
-            <span class="type">string</span>
-            <a name="#charset" class="var">$Charset</a>
-            <span class="type">=</span>
-            <span class="string">'utf8mb4'</span>,<br>
+              <span class="type">string</span>
+              <a name="#charset" class="var">$Charset</a>
+              <span class="type">=</span>
+              <span class="string">'utf8mb4'</span>,<br>
 
-            <span class="type">int</span>
-            <a href="#timeout" class="var">$TimeOut</a>
-            <span class="type">=</span>
-            <span class="const">5</span>,<br>
+              <span class="type">int</span>
+              <a href="#timeout" class="var">$TimeOut</a>
+              <span class="type">=</span>
+              <span class="const">5</span>,<br>
 
-            <span class="type">string</span>
-            <a href="#prefix" class="var">$Prefix</a>
-            <span class="type">=</span>
-            <span class="const">null</span>,<br>
+              <span class="type">string</span>
+              <a href="#prefix" class="var">$Prefix</a>
+              <span class="type">=</span>
+              <span class="const">null</span>,<br>
 
-            <span class="type">callable</span>
-            <a href="#onrun" class="var">$OnRun</a>
-            <span class="type">=</span>
-            <span class="const">null</span>
+              <span class="type">callable</span>
+              <a href="#onrun" class="var">$OnRun</a>
+              <span class="type">=</span>
+              <span class="const">null</span>
+            </div>
+            <span class="func">)</span>;
           </div>
-          <span class="object">)</span>;
+
+          <span class="type">}</span>
         </div>
 
         <div class="title">

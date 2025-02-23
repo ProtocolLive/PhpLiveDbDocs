@@ -22,48 +22,57 @@
 
         <div class="title">Sintaxe</div><br>
         <div class="code">
-          <iframe src="version_update.htm" class="import"></iframe>
-          <br>
-
           <span class="type">namespace</span>
-          <span class="object">ProtocolLive</span>\<span class="object">PhpLiveDb</span>;<br>
+          <span class="object">ProtocolLive</span><span class="type">\</span><span class="object">PhpLiveDb</span>;<br>
           <br>
 
-          <span class="type">function</span>
-          <span class="object">Update</span><span class="type">::</span><span class="func">Run(</span><br>
+          <span class="comment">/**</span><br>
+          <iframe src="version_update.htm" class="import"></iframe><br>
+          <span class="comment">&nbsp;*/</span><br>
+
+          <span class="type">final class</span>
+          <span class="object">Update</span><span class="type">{</span><br>
+
           <div class="ident">
+            <span class="type">public function</span>
+            <span class="func">Run(</span><br>
+            
+            <div class="ident">
+              <span class="type">bool</span>
+              <a href="#Debug" class="var">$Debug</a>
+              <span class="type">=</span>
+              <span class="const">false</span>,<br>
 
-            <span class="type">bool</span>
-            <a href="#Debug" class="var">$Debug</a>
-            <span class="type">=</span>
-            <span class="const">false</span>,<br>
+              <span class="type">bool</span>
+              <a href="#HtmlSafe" class="var">$HtmlSafe</a>
+              <span class="type">=</span>
+              <span class="const">true</span>,<br>
 
-            <span class="type">bool</span>
-            <a href="#HtmlSafe" class="var">$HtmlSafe</a>
-            <span class="type">=</span>
-            <span class="const">true</span>,<br>
+              <span class="type">bool</span>
+              <a href="#TrimValues" class="var">$TrimValues</a>
+              <span class="type">=</span>
+              <span class="const">true</span>,<br>
 
-            <span class="type">bool</span>
-            <a href="#TrimValues" class="var">$TrimValues</a>
-            <span class="type">=</span>
-            <span class="const">true</span>,<br>
+              <span class="type">bool</span>
+              <a href="#Log" class="var">$Log</a>
+              <span class="type">=</span>
+              <span class="const">false</span>,<br>
 
-            <span class="type">bool</span>
-            <a href="#Log" class="var">$Log</a>
-            <span class="type">=</span>
-            <span class="const">false</span>,<br>
+              <span class="type">int</span>|<span class="object">BackedEnum</span>
+              <a href="#LogEvent" class="var">$LogEvent</a>
+              <span class="type">=</span>
+              <span class="const">null</span>,<br>
 
-            <span class="type">int</span>|<span class="object">BackedEnum</span>
-            <a href="#LogEvent" class="var">$LogEvent</a>
-            <span class="type">=</span>
-            <span class="const">null</span>,<br>
+              <span class="type">int</span>
+              <a href="#LogUser" class="var">$LogUser</a>
+              <span class="type">=</span>
+              <span class="const">null</span>
+            </div>
 
-            <span class="type">int</span>
-            <a href="#LogUser" class="var">$LogUser</a>
-            <span class="type">=</span>
-            <span class="const">null</span>
+            <span class="func">)</span></span><span class="type">:int</span>;
           </div>
-          <span class="func">)</span></span><span class="type">:int</span>;
+
+          <span class="type">}</span>
         </div>
 
         <div class="title">Parameters</div>

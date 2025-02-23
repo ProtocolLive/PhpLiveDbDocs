@@ -24,24 +24,32 @@
 
         <div class="title">Sintaxe</div><br>
         <div class="code">
-          <iframe src="version_basics.htm" class="import"></iframe>
-          <br>
           <span class="type">namespace</span>
-          <span class="object">ProtocolLive</span>\<span class="object">PhpLiveDb</span>;<br>
+          <span class="object">ProtocolLive</span><span class="type">\</span><span class="object">PhpLiveDb</span>;<br>
           <br>
-          
-          <span class="type">public function</span>
-          <span class="object">Basics</span><span class="type">::</span><span class="func">Transaction(</span>
+
+          <span class="comment">/**</span><br>
+          <iframe src="version_basics.htm" class="import"></iframe><br>
+          <span class="comment">&nbsp;*/</span><br>
+
+          <span class="type">abstract class</span>
+          <span class="object">Basics</span><span class="type">{</span><br>
+
           <div class="ident">
-            <span class="type">callable</span>
-            $Code,<br>
-            <span class="type">bool</span>
-            $RunDefinedExceptionHandler
-            <span class="type">=</span>
-            <span class="const">false</span>
+            <span class="type">public function</span>
+            <span class="func">Transaction(</span>
+            <div class="ident">
+              <span class="type">callable</span>
+              $Code,<br>
+              <span class="type">bool</span>
+              $RunDefinedExceptionHandler
+              <span class="type">=</span>
+              <span class="const">false</span>
+            </div>
+            <span class="func">)</span><span class="type">:mixed</span>;
           </div>
-          <span class="func">)</span><span class="type">:mixed</span>;
-          </div>
+
+          <span class="type">}</span>
         </div>
 
         <div class="title">Parameters</div>
@@ -51,7 +59,7 @@
         <div class="title">Return</div>
         <p>Returns the value returned by the callable function or the <a href="https://www.php.net/manual/en/class.pdoexception.php" target="_blank">PDOException</a> occurred</p>
 
-        <div class="title">See more</div><br>
+        <div class="title">See more</div>
         <p>- <a href="basics_begin.htm">Begin</a></p>
         <p>- <a href="basics_commit.htm">Commit</a></p>
         <p>- <a href="basics_rollback.htm">Rollback</a></p>
