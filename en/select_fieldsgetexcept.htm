@@ -28,6 +28,9 @@
 
           <div class="comment">
             /**<br>
+            &nbsp;* <span class="type">@param</span>
+            <span class="type">string</span>|<span class="object">UnitEnum</span>|<span class="type">string</span>[]|<span class="object">UnitEnum</span>[]
+            $Fields<br>
             <iframe src="version_select.htm" class="import"></iframe><br>
             &nbsp;*/
           </div>
@@ -38,8 +41,8 @@
             <span class="type">public function</span>
             <span class="type">::</span><span class="func">FieldsGetExcept(</span><br>
             <div class="ident">
-              <span class="type">string</span>|<span class="object">UnitEnum</span>
-              <a href="#Field" class="var">$Field</a><br>
+              <span class="type">string</span>|<span class="object">UnitEnum</span>|<span class="type">array</span>
+              <a href="#Fields" class="var">$Fields</a><br>
               <span class="type">string</span>|<span class="object">UnitEnum</span>
               <a href="#Table" class="var">$Table</a>
               <span class="type">=</span>
@@ -60,8 +63,8 @@
 
         <div class="title">Parameters</div>
         <p>
-          <a name="Field" class="var">$Field</a>
-          - Field name to exclude from list;
+          <a name="Fields" class="var">$Fields</a>
+          - Field or fields names to exclude from list;
         </p>
         <p>
           <a name="Table" class="var">$Table</a>
@@ -78,7 +81,6 @@
 
         <div class="title">See more</div><br>
         <p>- <a href="select_fieldsget.htm">FieldsGet</a></p>
-        <p>- <a href="fieldsgetreturn.htm">FieldsGetReturn</a></p>
 
         <div class="title">Examples</div><br>
         <div class="code">
@@ -86,14 +88,8 @@
           <span class="type">=</span>
           <span class="var">$Db</span><span class="type">-></span><a href="phplivedb_select.htm" class="func">Select</a><span class="func">(</span><span class="string">'users'</span><span class="func">)</span>;<br>
           <span class="object">echo</span>
-          <span class="var">$consult</span><span class="type">-></span><span class="func">FieldsGet()</span>;<br>
+          <span class="var">$consult</span><span class="type">-></span><a href="select_fieldsget.htm" class="func">FieldsGet()</a>;<br>
           <span class="comment">//user_id,user,email,pwd,created,lastlogin</span><br>
-        </div>
-
-        <div class="code">
-          <span class="var">$consult</span>
-          <span class="type">=</span>
-          <span class="var">$Db</span><span class="type">-></span><a href="phplivedb_select.htm" class="func">Select</a><span class="func">(</span><span class="string">'users'</span><span class="func">)</span>;<br>
           <span class="object">echo</span>
           <span class="var">$consult</span><span class="type">-></span><span class="func">FieldsGetExcept(<span class="string">'email'</span>)</span>;<br>
           <span class="comment">//user_id,user,pwd,created,lastlogin</span><br>
