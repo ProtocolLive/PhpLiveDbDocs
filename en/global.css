@@ -1,23 +1,5 @@
-html {
-  background-color: #333;
-  font-family: 'Fira Sans', 'Source Sans Pro', Helvetica, Arial, sans-serif;
-}
-
-a,
-a:visited {
-  color: #369;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-iframe.import {
-  border: 0;
-  height: 1.15rem;
-  overflow: hidden;
-  width: 17rem;
+.argument {
+  color: #ffb86c !important
 }
 
 .code {
@@ -29,10 +11,41 @@ iframe.import {
   padding: 10px;
 }
 
+.code .object {
+  color: #8be9fd
+}
+
+.code .var {
+  color: #fff;
+}
+
+.comment {
+  color: #6272a4;
+}
+
+.const {
+  color: #bd93f9;
+}
+
+.func {
+  color: #50fa7b !important;
+}
+
 .ident {
   margin-bottom: 0px;
   margin-left: 15px;
   margin-top: 0px;
+}
+
+.maintitle {
+  border-bottom: dotted 1px;
+  color: #793862;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.menu {
+  border-bottom: dotted 1px #ccc;
 }
 
 .menu1 {
@@ -49,23 +62,8 @@ iframe.import {
   width: 200px;
 }
 
-.maintitle {
-  border-bottom: dotted 1px;
-  color: #793862;
-  font-size: 22px;
-  font-weight: bold;
-}
-
-.title {
-  border-bottom: dotted 1px;
-  color: #793862;
-  font-size: 18px;
-  font-weight: bold;
-  margin-top: 50px
-}
-
-.menu {
-  border-bottom: dotted 1px #ccc;
+.menulink {
+  color: #ccc !important;
 }
 
 .meta,
@@ -76,46 +74,48 @@ iframe.import {
   text-align: center;
 }
 
-.menulink {
-  color: #ccc !important;
-}
-
-.func {
-  color: #50fa7b !important;
-}
-
-.type {
-  color: #ff79c6;
-}
-
-.code .var {
-  color: #fff;
-}
-
-.var {
+.object {
   color: #369
-}
-
-.const {
-  color: #bd93f9;
 }
 
 .string {
   color: #f1fa8c;
 }
 
-.comment {
-  color: #6272a4;
+.title {
+  border-bottom: dotted 1px;
+  color: #793862;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 50px
 }
 
-.code .object {
-  color: #8be9fd
+.type {
+  color: #ff79c6;
 }
 
-.object {
+.var {
   color: #369
 }
 
-.argument {
-  color: #ffb86c !important
+a,
+a:visited {
+  color: #369;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+html {
+  background-color: #333;
+  font-family: 'Fira Sans', 'Source Sans Pro', Helvetica, Arial, sans-serif;
+}
+
+iframe.import {
+  border: 0;
+  height: 1.16rem;
+  overflow: hidden;
+  width: 17rem;
 }
