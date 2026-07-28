@@ -46,8 +46,12 @@
               <a href="#Using" class="var">$Using</a>
               <span class="type">=</span> <span class="const">null</span>,<br>
 
-              <span class="type">string</span>
+              <span class="type">string</span>|<span class="object">UnitEnum</span>
               <a href="#On" class="var">$On</a>
+              <span class="type">=</span> <span class="const">null</span>,<br>
+
+              <span class="type">string</span>|<span class="object">UnitEnum</span>
+              <a href="#On2" class="var">$On2</a>
               <span class="type">=</span> <span class="const">null</span>,<br>
 
               <a href="enum_joins.htm" class="object">Joins</a>
@@ -57,6 +61,11 @@
 
               <span class="type">string</span>
               <a href="#alias" class="var">$Alias</a>
+              <span class="type">=</span>
+              <span class="const">null</span>,<br>
+
+              <span class="type">string</span>
+              <a href="#alias2" class="var">$Alias2</a>
               <span class="type">=</span>
               <span class="const">null</span>
             </div>
@@ -79,12 +88,20 @@
           - The SQL "on" relationship field;
         </p>
         <p>
+          <a name="On2" class="var">$On2</a>
+          - The SQL "on" relationship second field. Useful to use with enums;
+        </p>
+        <p>
           <a name="Type" class="var">$Type</a>
           - The relationship type;
         </p>
         <p>
           <a name="alias" class="var">$Alias</a>
-          - Add an alias to the table;
+          - Add an alias to the parameters $Table and $On;
+        </p>
+        <p>
+          <a name="alias2" class="var">$Alias2</a>
+          - Add an alias to the parameter $On2;
         </p>
 
         <div class="title">See more</div>
